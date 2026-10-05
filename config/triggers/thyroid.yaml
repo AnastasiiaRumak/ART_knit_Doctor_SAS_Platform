@@ -1,0 +1,144 @@
+# Автоматически сгенерировано вручную
+# Триггеры для щитовидной железы
+# Числовые пороги — в config/sizes.yaml (секция "Щитовидная железа")
+
+organ_code: thyroid
+organ_name: Щитовидная железа
+keywords:
+  - щитовидная железа
+  - щитовидной железы
+  - щж
+  - тиреоидная
+  - перешеек
+  - правая доля
+  - левая доля
+  - ti-rads
+  - eu-tirads
+  - ти-радс
+  - узловой зоб
+  - аит
+
+findings:
+  - id: thyroid_uzel
+    synonyms:
+      - узел
+      - узлы
+      - узловое образование
+      - узловые образования
+      - узловой зоб
+      - образование щитовидной железы
+      - гипоэхогенное образование
+      - изоэхогенное образование
+      - гиперэхогенное образование
+    specialist:
+      - Эндокринолог
+    urgency: planned
+    is_negative: false
+    source: Узел щитовидной железы
+    regex: (?i)(узел|узлово[ей]\s+образовани|узловой\s+зоб|узлы)
+
+  - id: thyroid_tirads3
+    synonyms:
+      - ti-rads 3
+      - eu-tirads 3
+      - tirads 3
+      - ти-радс 3
+    specialist:
+      - Эндокринолог
+    urgency: planned
+    is_negative: false
+    source: TI-RADS 3
+    regex: (?i)(ti[-\s]?rads\s*3|eu[-\s]?tirads\s*3)
+
+  - id: thyroid_tirads4_5
+    synonyms:
+      - ti-rads 4
+      - ti-rads 5
+      - eu-tirads 4
+      - eu-tirads 5
+      - tirads 4
+      - tirads 5
+    specialist:
+      - Эндокринолог
+      - Онколог
+    urgency: oncological
+    is_negative: false
+    source: TI-RADS 4-5
+    regex: (?i)(ti[-\s]?rads\s*[45]|eu[-\s]?tirads\s*[45])
+
+  - id: thyroid_uvelichenie
+    synonyms:
+      - увеличена щитовидная
+      - увеличен объём
+      - увеличение объёма железы
+      - увеличение щитовидной
+      - диффузный зоб
+      - зоб
+      - гиперплазия щитовидной
+    specialist:
+      - Эндокринолог
+    urgency: planned
+    is_negative: false
+    source: Увеличение щитовидной железы
+
+  - id: thyroid_ait
+    synonyms:
+      - аит
+      - аутоиммунный тиреоидит
+      - диффузные изменения по типу аит
+      - признаки аит
+      - эхо признаки аит
+      - диффузные изменения щитовидной железы
+    specialist:
+      - Эндокринолог
+    urgency: planned
+    is_negative: false
+    source: АИТ (диффузные изменения)
+
+  - id: thyroid_kista
+    synonyms:
+      - киста
+      - кисты
+      - анэхогенное образование
+      - жидкостное образование
+      - анэхогенное включение
+    specialist:
+      - Эндокринолог
+    urgency: planned
+    is_negative: false
+    source: Киста щитовидной железы
+
+  - id: thyroid_limfouzly
+    synonyms:
+      - лимфоузлы увеличены
+      - лимфатические узлы увеличены
+      - изменённая структура лимфоузлов
+      - измененная структура лимфоузлов
+      - нарушение дифференцировки лимфоузлов
+      - утолщение коркового слоя
+    specialist:
+      - Эндокринолог
+      - Онколог
+    urgency: oncological
+    is_negative: false
+    source: Увеличенные лимфоузлы ЩЖ
+
+  - id: thyroid_norma
+    synonyms:
+      - не увеличена
+      - не увеличен
+      - норма
+      - без патологии
+      - не изменена
+      - ti-rads 1
+      - ti-rads 2
+      - eu-tirads 1
+      - eu-tirads 2
+      - объемные образования не выявлены
+      - очаговые образования не выявлены
+      - узловые образования не выявлены
+      - кистозных образований не выявлено
+    specialist: []
+    urgency: observation
+    is_negative: true
+    source: Норма

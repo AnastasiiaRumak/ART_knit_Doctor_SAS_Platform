@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Вход — ArtKnit | СМ-Клиника</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --primary: #2563EB;
+    --primary-hover: #1D4ED8;
+    --primary-light: #EFF6FF;
+    --patient: #059669;
+    --patient-light: #ECFDF5;
+    --text: #111827;
+    --text-muted: #6B7280;
+    --border: #E5E7EB;
+    --bg: #F9FAFB;
+    --error-bg: #FEF2F2;
+    --error-border: #FECACA;
+    --error-text: #991B1B;
+    --success-bg: #ECFDF5;
+    --success-border: #A7F3D0;
+    --success-text: #065F46;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #EFF6FF 0%, #F9FAFB 100%);
+    min-height: 100vh; display: flex; align-items: center;
+    justify-content: center; padding: 20px;
+    color: var(--text); line-height: 1.5;
+  }
+
+  .login-wrap { width: 100%; max-width: 560px; }
+
+  .brand { text-align: center; margin-bottom: 22px; }
+  .brand-logo {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 56px; height: 56px; border-radius: 16px;
+    background: var(--primary); color: white; font-size: 28px;
+    font-weight: 700; margin-bottom: 14px;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+  }
+  .brand-title { font-size: 22px; font-weight: 700; }
+  .brand-subtitle { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+  .card {
+    background: white; border-radius: 14px; padding: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04);
+    border: 1px solid var(--border);
+  }
+  .card h2 { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+  .card .hint { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+
+  /* --- 4 карточки кабинетов --- */
+  .cabinets {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 8px; margin-bottom: 22px;
+  }
+  .cabinet {
+    padding: 12px 6px; border: 1px solid var(--border);
+    border-radius: 10px; text-align: center; cursor: pointer;
+    background: white; transition: all 0.15s;
+    font-family: inherit;
+  }
+  .cabinet:hover {
+    border-color: var(--primary);
+    background: var(--primary-light);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  }
+  .cabinet.active { background: var(--primary); color: white; border-color: var(--primary); }
+  .cabinet.active .cabinet-desc { color: rgba(255,255,255,0.85); }
+  .cabinet[data-role="patient"]:hover {
+    border-color: var(--patient);
+    background: var(--patient-light);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.1);
+  }
+  .cabinet[data-role="patient"].active {
+    background: var(--patient); border-color: var(--patient);
+  }
+  .cabinet-icon { font-size: 20px; margin-bottom: 4px; display: block; }
+  .cabinet-title { font-size: 12px; font-weight: 600; }
+  .cabinet-desc { font-size: 10px; color: var(--text-muted); margin-top: 2px; line-height: 1.3; }
+
+  /* --- Разделитель --- */
+  .divider {
+    display: flex; align-items: center; gap: 10px;
+    margin: 4px 0 16px; color: var(--text-muted); font-size: 12px;
+  }
+  .divider::before, .divider::after {
+    content: ""; flex: 1; height: 1px; background: var(--border);
+  }
+
+  /* --- Поля --- */
+  .field { margin-bottom: 12px; }
+  .field label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; }
+  .input-wrap { position: relative; }
+  .field input {
+    width: 100%; padding: 11px 14px; font-size: 14px;
+    font-family: inherit; border: 1px solid var(--border);
+    border-radius: 8px; outline: none; transition: all 0.15s;
+  }
+  .field input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+  }
+  .toggle-eye {
+    position: absolute; right: 10px; top: 50%;
+    transform: translateY(-50%); background: none; border: none;
+    cursor: pointer; font-size: 16px; padding: 4px 8px;
+    color: var(--text-muted); border-radius: 6px;
+  }
+  .toggle-eye:hover { background: var(--bg); }
+
+  /* --- Кнопка --- */
+  .btn-primary {
+    width: 100%; padding: 12px; font-size: 15px; font-weight: 600;
+    font-family: inherit; color: white; background: var(--primary);
+    border: none; border-radius: 8px; cursor: pointer;
+    transition: background 0.15s, transform 0.05s;
+    margin-top: 6px;
+  }
+  .btn-primary:hover:not(:disabled) { background: var(--primary-hover); }
+  .btn-primary:active:not(:disabled) { transform: translateY(1px); }
+  .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  /* --- Сообщения --- */
+  .alert {
+    padding: 10px 14px; border-radius: 8px; font-size: 13px;
+    margin-bottom: 14px; display: none; border: 1px solid;
+  }
+  .alert.show { display: block; }
+  .alert.error { background: var(--error-bg); border-color: var(--error-border); color: var(--error-text); }
+  .alert.success { background: var(--success-bg); border-color: var(--success-border); color: var(--success-text); }
+
+  /* --- Демо-подсказка --- */
+  .demo-hint {
+    margin-top: 18px; padding: 12px 14px;
+    background: #FFFBEB; border: 1px solid #FDE68A;
+    border-radius: 8px; font-size: 11.5px;
+    color: #78350F; line-height: 1.7;
+  }
+  .demo-hint strong { color: #451A03; display: block; margin-bottom: 4px; }
+  .demo-hint code {
+    background: rgba(0,0,0,0.06); padding: 1px 5px;
+    border-radius: 4px; font-family: "SF Mono", Monaco, Consolas, monospace;
+    font-size: 11px;
+  }
+  .demo-hint .row { display: flex; justify-content: space-between; gap: 8px; }
+
+  /* --- Подвал --- */
+  .footer { text-align: center; font-size: 12px; color: var(--text-muted); margin-top: 18px; }
+  .footer a { color: var(--primary); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  /* --- Альтернативные действия --- */
+  .alt-action {
+    text-align: center; margin-top: 16px;
+    padding-top: 14px; border-top: 1px dashed var(--border);
+    font-size: 13px; color: var(--text-muted);
+  }
+  .alt-action a { color: var(--primary); text-decoration: none; font-weight: 500; }
+  .alt-action a:hover { text-decoration: underline; }
+
+  .spinner {
+    display: inline-block; width: 14px; height: 14px;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-top-color: white; border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    vertical-align: -2px; margin-right: 6px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 520px) {
+    .card { padding: 20px; }
+    .cabinets { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<div class="login-wrap">
+
+  <div class="brand">
+    <div class="brand-logo">A</div>
+    <div class="brand-title">ArtKnit</div>
+    <div class="brand-subtitle">Система маршрутизации пациентов · СМ-Клиника</div>
+  </div>
+
+  <div class="card">
+    <h2>Вход в систему</h2>
+    <p class="hint">Выберите роль или введите логин и пароль вручную</p>
+
+    <div id="alert" class="alert"></div>
+
+    <!-- 4 карточки: Врач · Пациент · Руководитель · Администратор -->
+    <div class="cabinets">
+      <button type="button" class="cabinet" data-role="doctor"
+              onclick="pickCabinet('doctor')">
+        <span class="cabinet-icon">👨‍⚕️</span>
+        <div class="cabinet-title">Врач</div>
+        <div class="cabinet-desc">Пациенты,<br>загрузка</div>
+      </button>
+      <button type="button" class="cabinet" data-role="patient"
+              onclick="pickCabinet('patient')">
+        <span class="cabinet-icon">🧑</span>
+        <div class="cabinet-title">Пациент</div>
+        <div class="cabinet-desc">Мой маршрут,<br>запись</div>
+      </button>
+      <button type="button" class="cabinet" data-role="manager"
+              onclick="pickCabinet('manager')">
+        <span class="cabinet-icon">📊</span>
+        <div class="cabinet-title">Руководитель</div>
+        <div class="cabinet-desc">Дашборд,<br>KPI</div>
+      </button>
+      <button type="button" class="cabinet" data-role="admin"
+              onclick="pickCabinet('admin')">
+        <span class="cabinet-icon">🔑</span>
+        <div class="cabinet-title">Админ</div>
+        <div class="cabinet-desc">Полный<br>доступ</div>
+      </button>
+    </div>
+
+    <div class="divider">или введите логин и пароль</div>
+
+    <!-- Форма -->
+    <form id="loginForm" onsubmit="return handleLogin(event)" autocomplete="off">
+
+      <div class="field">
+        <label for="username">Логин</label>
+        <input type="text" id="username" name="username"
+               placeholder="doctor / patient / manager / admin"
+               autocomplete="username" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Пароль</label>
+        <div class="input-wrap">
+          <input type="password" id="password" name="password"
+                 placeholder="••••••••" autocomplete="current-password" required>
+          <button type="button" class="toggle-eye"
+                  onclick="togglePassword()" aria-label="Показать">👁</button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primary" id="submitBtn">Войти</button>
+    </form>
+
+    <!-- Ссылка на публичную загрузку -->
+    <div class="alt-action">
+      Нет учётной записи?
+      <a href="/upload">Загрузить протокол без входа →</a>
+    </div>
+
+    <!-- Демо-подсказка -->
+    <div class="demo-hint">
+      <strong>🔑 Демо-доступы</strong>
+      <div class="row"><span>👨‍⚕️ Врач:</span> <code>doctor / doctor123</code></div>
+      <div class="row"><span>🧑 Пациент:</span> <code>patient / patient123</code></div>
+      <div class="row"><span>📊 Руководитель:</span> <code>manager / manager123</code></div>
+      <div class="row"><span>🔑 Админ:</span> <code>admin / admin123</code></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 СМ-Клиника · <a href="/docs">API</a> ·
+    <a href="/privacy">Политика конфиденциальности</a>
+  </div>
+
+</div>
+
+<script>
+// =====================================================================
+//  ?next= от сервера
+// =====================================================================
+// __NEXT_URL_PLACEHOLDER__
+window.NEXT_URL = window.NEXT_URL || null;
+
+// =====================================================================
+//  Демо-логины (для автозаполнения при клике на карточку)
+// =====================================================================
+const DEMO_CREDENTIALS = {
+  doctor:  { username: "doctor",  password: "doctor123" },
+  patient: { username: "patient", password: "patient123" },
+  manager: { username: "manager", password: "manager123" },
+  admin:   { username: "admin",   password: "admin123" },
+};
+
+const ROLE_REDIRECT = {
+  doctor:  "/doctor/dashboard",
+  patient: "/patient/dashboard",
+  manager: "/manager",
+  admin:   "/admin",
+};
+
+// =====================================================================
+//  Клик по карточке роли → автозаполнение → автологин
+// =====================================================================
+function pickCabinet(role) {
+  // Только визуальная подсветка — без автозаполнения и автологина
+  document.querySelectorAll(".cabinet").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.role === role);
+  });
+
+  // Подсказка — куда вводить
+  showAlert(
+    `Введите логин и пароль для роли «${ROLE_NAMES[role] || role}» — см. подсказку ниже`,
+    "info"
+  );
+
+  // Фокус на поле логина
+  document.getElementById("username").focus();
+}
+
+// =====================================================================
+//  Показать/скрыть пароль
+// =====================================================================
+function togglePassword() {
+  const input = document.getElementById("password");
+  input.type = input.type === "password" ? "text" : "password";
+}
+
+// =====================================================================
+//  Сообщения
+// =====================================================================
+function showAlert(message, type = "error") {
+  const el = document.getElementById("alert");
+  el.className = `alert show ${type}`;
+  el.textContent = message;
+}
+function hideAlert() {
+  const el = document.getElementById("alert");
+  el.className = "alert"; el.textContent = "";
+}
+
+// =====================================================================
+//  Отправка формы
+// =====================================================================
+async function handleLogin(event) {
+  event.preventDefault();
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value;
+  if (!username || !password) {
+    showAlert("Введите логин и пароль");
+    return false;
+  }
+  await submitLogin(username, password);
+  return false;
+}
+
+async function submitLogin(username, password) {
+  hideAlert();
+
+  const btn = document.getElementById("submitBtn");
+  const original = btn.textContent;
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span>Проверяем…';
+
+  try {
+    const resp = await fetch("/api/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, password }),
+      credentials: "same-origin",
+    });
+
+    const data = await resp.json();
+    if (!resp.ok) throw new Error(data.detail || "Неверный логин или пароль");
+
+    showAlert(`Добро пожаловать, ${data.name || data.role}!`, "success");
+
+    const target = window.NEXT_URL || ROLE_REDIRECT[data.role] || "/upload";
+    setTimeout(() => { window.location.href = target; }, 400);
+
+  } catch (err) {
+    showAlert(err.message || "Ошибка соединения");
+    btn.disabled = false;
+    btn.textContent = original;
+  }
+}
+
+// =====================================================================
+//  Автозаполнение из URL: ?u=doctor&p=doctor123
+// =====================================================================
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(location.search);
+  const u = params.get("u"); const p = params.get("p");
+  if (u) document.getElementById("username").value = u;
+  if (p) document.getElementById("password").value = p;
+});
+</script>
+
+</body>
+</html>

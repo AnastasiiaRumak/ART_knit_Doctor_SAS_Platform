@@ -1,0 +1,48 @@
+# config/roles.yaml
+# Контуры доступа к системе маршрутизации
+
+roles:
+  patient:
+    description: "Пациент — только свой маршрут"
+    can_run: ["show_own_route"]
+    can_see_pii: true       # видит свои ПДн
+    can_see_others: false
+    can_see_aggregates: false
+    can_edit_config: false
+
+  doctor:
+    description: "Врач — свои пациенты"
+    can_run: ["demo", "protocol", "show_audit"]
+    can_see_pii: true
+    can_see_others: false   # только свои
+    can_see_aggregates: false
+    can_edit_config: false
+
+  manager:
+    description: "Руководитель — агрегаты без ПДн"
+    can_run: ["demo", "manager", "metrics"]
+    can_see_pii: false      # ❌ ФИО скрыты
+    can_see_others: true
+    can_see_aggregates: true
+    can_edit_config: false
+
+  admin:
+    description: "Администратор — полный доступ"
+    can_run: ["*"]
+    can_see_pii: true
+    can_see_others: true
+    can_see_aggregates: true
+    can_edit_config: true
+
+# API-ключи (в проде — в секретах, не в git!)
+api_keys:
+  "doctor_key_abc123":
+    role: doctor
+    doctor_name: "Туаева А.С."
+    doctor_initials: "АТ"
+  "manager_key_xyz789":
+    role: manager
+    name: "Главврач"
+  "admin_key_root":
+    role: admin
+    name: "Администратор"

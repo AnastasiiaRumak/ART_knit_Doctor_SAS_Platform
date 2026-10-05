@@ -1,0 +1,560 @@
+# Автоматически сгенерировано parse_tables.py
+# Источник: omt
+# НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ — правьте исходные таблицы и перезапускайте
+
+organ_code: omt
+organ_name: Органы малого таза
+keywords:
+- органы малого таза
+- омт
+- матка
+- яичник
+- эндометрий
+- миометрий
+- шейка матки
+- м-эхо
+- цервикальный канал
+findings:
+- id: omt_polip_endometriya
+  synonyms:
+  - полип эндометрия
+  - полипоз эндометрия
+  - подозрение на полип эндометрия
+  - патология эндометрия (полип)
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Полип эндометрия / полипоз эндометрия / подозрение на полип эндометрия / патология эндометрия (полип)
+- id: omt_giperplaziya_endometriya
+  synonyms:
+  - гиперплазия эндометрия
+  - гиперплазия
+  - утолщение эндометрия
+  - несоответствие толщины эндометрия дню цикла
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Гиперплазия эндометрия / гиперплазия / утолщение эндометрия / несоответствие толщины эндометрия дню цикла
+- id: omt_neodnorodnyy_endometriy
+  synonyms:
+  - неоднородный эндометрий
+  - неоднородная эхоструктура эндометрия
+  - неоднородный м-эхо
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Неоднородный эндометрий / неоднородная эхоструктура эндометрия / неоднородный М-эхо
+- id: omt_obrazovanie_endometriya
+  synonyms:
+  - образование эндометрия
+  - гиперэхогенное образование в полости матки
+  - образование с сосудистой ножкой
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Образование эндометрия / гиперэхогенное образование в полости матки / образование с сосудистой ножкой
+- id: omt_polip_sheyki_matki
+  synonyms:
+  - полип шейки матки
+  - полип цервикального канала
+  - полип шеечно-перешеечной области
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Полип шейки матки / полип цервикального канала / полип шеечно-перешеечной области
+- id: omt_mioma_matki
+  synonyms:
+  - миома матки
+  - миоматозный узел
+  - лейомиома
+  - фибромиома
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Миома матки / миоматозный узел / лейомиома / фибромиома
+- id: omt_intramuralnaya_mioma
+  synonyms:
+  - интрамуральная миома
+  - интрамуральный узел
+  - миома figo 4
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Интрамуральная миома / интрамуральный узел / миома FIGO 4
+- id: omt_submukoznaya_mioma
+  synonyms:
+  - субмукозная миома
+  - субмукозный узел
+  - миома figo 5
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Субмукозная миома / субмукозный узел / миома FIGO 5
+- id: omt_subseroznaya_mioma
+  synonyms:
+  - субсерозная миома
+  - субсерозный узел
+  - миома figo 6
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Субсерозная миома / субсерозный узел / миома FIGO 6
+- id: omt_intramuralno_subseroznyy_uzel
+  synonyms:
+  - интрамурально-субсерозный узел
+  - миома figo 5-6
+  - смешанный узел
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Интрамурально-субсерозный узел / миома FIGO 5-6 / смешанный узел
+- id: omt_mnogouzlovaya_mioma_matki
+  synonyms:
+  - многоузловая миома матки
+  - множественные миоматозные узлы
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Многоузловая миома матки / множественные миоматозные узлы
+- id: omt_mioma_matki_v_stadii_kaltsinoza
+  synonyms:
+  - миома матки в стадии кальциноза
+  - кальцинированный узел
+  - узел с кальцинатами
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Миома матки в стадии кальциноза / кальцинированный узел / узел с кальцинатами
+- id: omt_mioma_matki_malyh_razmerov
+  synonyms:
+  - миома матки малых размеров
+  - мелкие миоматозные узлы
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Миома матки малых размеров / мелкие миоматозные узлы
+- id: omt_adenomioz
+  synonyms:
+  - аденомиоз
+  - диффузные изменения миометрия по типу аденомиоза
+  - внутренний эндометриоз
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Аденомиоз / диффузные изменения миометрия по типу аденомиоза / внутренний эндометриоз
+- id: omt_diffuznye_izmeneniya_miometriya
+  synonyms:
+  - диффузные изменения миометрия
+  - неоднородный миометрий
+  - диффузно неоднородный миометрий
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Диффузные изменения миометрия / неоднородный миометрий / диффузно неоднородный миометрий
+- id: omt_endometrioz_tela_matki
+  synonyms:
+  - эндометриоз тела матки
+  - эндометриоз матки
+  - n80.0
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Эндометриоз тела матки / эндометриоз матки / N80.0
+- id: omt_endometrioidnaya_kista
+  synonyms:
+  - эндометриоидная киста
+  - эндометриома
+  - киста эндометриоидная
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Эндометриоидная киста / эндометриома / киста эндометриоидная
+- id: omt_kista_yaichnika
+  synonyms:
+  - киста яичника
+  - фолликулярная киста
+  - ретенционная киста
+  - серозная киста
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Киста яичника / фолликулярная киста / ретенционная киста / серозная киста
+- id: omt_paraovarialnaya_kista
+  synonyms:
+  - параовариальная киста
+  - киста параовариальная
+  - параовариальная киста справа
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Параовариальная киста / киста параовариальная / параовариальная киста справа
+- id: omt_endometrioidnaya_kista_yaichnika
+  synonyms:
+  - эндометриоидная киста яичника
+  - киста правого яичника
+  - эндометриоидная? киста
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Эндометриоидная киста яичника / киста правого яичника / эндометриоидная? киста
+- id: omt_zhidkostnoe_obrazovanie_yaichnika
+  synonyms:
+  - жидкостное образование яичника
+  - анэхогенное образование яичника
+  - аваскулярное образование
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Жидкостное образование яичника / анэхогенное образование яичника / аваскулярное образование
+- id: omt_zhidkostnoe_obrazovanie_levogo_yaichnika
+  synonyms:
+  - жидкостное образование левого яичника
+  - ретенционная киста левого яичника
+  - o-rads 2
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Жидкостное образование левого яичника / ретенционная киста левого яичника / O-RADS 2
+- id: omt_kista_s_nepolnoy_peregorodkoy
+  synonyms:
+  - киста с неполной перегородкой
+  - серозная киста с перегородкой
+  - киста с перегородкой
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Киста с неполной перегородкой / серозная киста с перегородкой / киста с перегородкой
+- id: omt_kisty_sheyki_matki
+  synonyms:
+  - кисты шейки матки
+  - наботовы кисты
+  - ретенционные кисты шейки матки
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Кисты шейки матки / наботовы кисты / ретенционные кисты шейки матки
+- id: omt_kisty_endotserviksa
+  synonyms:
+  - кисты эндоцервикса
+  - кисты цервикального канала
+  - эндоцервикальные кисты
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Кисты эндоцервикса / кисты цервикального канала / эндоцервикальные кисты
+- id: omt_endotservikoz
+  synonyms:
+  - эндоцервикоз
+  - хронический эндоцервицит
+  - кисты шейки матки со взвесью
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Эндоцервикоз / хронический эндоцервицит / кисты шейки матки со взвесью
+- id: omt_gidrosalpings
+  synonyms:
+  - гидросальпингс
+  - расширение маточной трубы
+  - гидросальпингс справа
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Гидросальпингс / расширение маточной трубы / гидросальпингс справа
+- id: omt_hronicheskiy_salpingooforit
+  synonyms:
+  - хронический сальпингоофорит
+  - сальпингоофорит
+  - воспаление придатков
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Хронический сальпингоофорит / сальпингоофорит / воспаление придатков
+- id: omt_spaechnyy_protsess_v_malom_tazu
+  synonyms:
+  - спаечный процесс в малом тазу
+  - косвенные признаки спаечного процесса
+  - спайки
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Спаечный процесс в малом тазу / косвенные признаки спаечного процесса / спайки
+- id: omt_svobodnaya_zhidkost_v_malom_tazu
+  synonyms:
+  - свободная жидкость в малом тазу
+  - выпот в малом тазу
+  - жидкость со взвесью в дугласовом пространстве
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Свободная жидкость в малом тазу / выпот в малом тазу / жидкость со взвесью в дугласовом пространстве
+- id: omt_serozometra
+  synonyms:
+  - серозометра
+  - жидкость в полости матки
+  - анэхогенное содержимое в полости матки
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Серозометра / жидкость в полости матки / анэхогенное содержимое в полости матки
+- id: omt_opuschenie_matki
+  synonyms:
+  - опущение матки
+  - опущение матки 4 степени
+  - пролапс
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Опущение матки / опущение матки 4 степени / пролапс
+- id: omt_varikoznoe_rasshirenie_ven_malogo_taza
+  synonyms:
+  - варикозное расширение вен малого таза
+  - варикоз вен малого таза
+  - расширение параметральных вен
+  specialist:
+  - Флеболог
+  - гинеколог
+  is_negative: false
+  urgency: planned
+  source: Варикозное расширение вен малого таза / варикоз вен малого таза / расширение параметральных вен
+- id: omt_rasshirenie_ven_parametralnogo_spleteniy
+  synonyms:
+  - расширение вен параметрального сплетения
+  - параметральные вены расширены до 7 мм
+  specialist:
+  - Флеболог
+  - гинеколог
+  is_negative: false
+  urgency: planned
+  source: Расширение вен параметрального сплетения / параметральные вены расширены до 7 мм
+- id: omt_snizhenie_ovarialnogo_rezerva
+  synonyms:
+  - снижение овариального резерва
+  - обеднённый фолликулярный аппарат
+  - афолликулярные яичники
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Снижение овариального резерва / обеднённый фолликулярный аппарат / афолликулярные яичники
+- id: omt_multifollikulyarnye_yaichniki
+  synonyms:
+  - мультифолликулярные яичники
+  - множественные фолликулы
+  - поликистозные изменения?
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Мультифолликулярные яичники / множественные фолликулы / поликистозные изменения?
+- id: omt_zheltoe_telo
+  synonyms:
+  - желтое тело
+  - желтое тело в яичнике
+  - желтое тело 19 мм
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Желтое тело / желтое тело в яичнике / желтое тело 19 мм
+- id: omt_dominantnyy_follikul
+  synonyms:
+  - доминантный фолликул
+  - доминантный фолликул 19 мм
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Доминантный фолликул / доминантный фолликул 19 мм
+- id: omt_obrazovanie_yaichnika
+  synonyms:
+  - образование яичника
+  - объемное образование яичника
+  - o-rads 2
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Образование яичника / объемное образование яичника / O-RADS 2
+- id: omt_o_rads_1
+  synonyms:
+  - o-rads 1
+  - o-rads 1 справа
+  - o-rads 1 слева
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: O-RADS 1 / O-RADS 1 справа / O-RADS 1 слева
+- id: omt_o_rads_2
+  synonyms:
+  - o-rads 2
+  - o-rads 2 справа
+  - o-rads 2 слева
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: O-RADS 2 / O-RADS 2 справа / O-RADS 2 слева
+- id: omt_vms
+  synonyms:
+  - вмс
+  - внутриматочная спираль
+  - вмс мирена
+  - вмк
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: ВМС / внутриматочная спираль / ВМС Мирена / ВМК
+- id: omt_vms_raspolozhena_tipichno
+  synonyms:
+  - вмс расположена типично
+  - вмс в полости матки
+  - вмс правильно расположена
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: ВМС расположена типично / ВМС в полости матки / ВМС правильно расположена
+- id: omt_sostoyanie_posle_gisterorezektoskopii
+  synonyms:
+  - состояние после гистерорезектоскопии
+  - состояние после удаления вмк
+  - после операции
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Состояние после гистерорезектоскопии / состояние после удаления ВМК / после операции
+- id: omt_sostoyanie_posle_miomektomii
+  synonyms:
+  - состояние после миомэктомии
+  - состояние после удаления эндометриомы
+  - 2022г — миомэктомия
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Состояние после миомэктомии / состояние после удаления эндометриомы / 2022г — миомэктомия
+- id: omt_zhelezisto_fibroznyy_polip_endometriya
+  synonyms:
+  - железисто-фиброзный полип эндометрия
+  - железисто-фиброзный полип
+  - полип эндометрия (морфология)
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Железисто-фиброзный полип эндометрия / железисто-фиброзный полип / полип эндометрия (морфология)
+- id: omt_hronicheskiy_endometrit
+  synonyms:
+  - хронический эндометрит
+  - морфологическая картина в эндометрии
+  - ассоциировано с вмс
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Хронический эндометрит / морфологическая картина в эндометрии / ассоциировано с ВМС
+- id: omt_endometrioz_matki
+  synonyms:
+  - эндометриоз матки
+  - n80.0
+  - эндометриоз тела матки
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Эндометриоз матки / N80.0 / эндометриоз тела матки
+- id: omt_intramuralnaya_leyomioma_matki
+  synonyms:
+  - интрамуральная лейомиома матки
+  - d25.1
+  - лейомиома матки
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Интрамуральная лейомиома матки / D25.1 / лейомиома матки
+- id: omt_drugie_dobrokachestvennye_novoobrazovani
+  synonyms:
+  - другие доброкачественные новообразования тела матки
+  - d26.1
+  - доброкачественное новообразование матки
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Другие доброкачественные новообразования тела матки / D26.1 / доброкачественное новообразование матки
+- id: omt_patologiya_endometriya
+  synonyms:
+  - патология эндометрия
+  - подозрение на патологию эндометрия
+  - нельзя исключить патологию эндометрия
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Патология эндометрия / подозрение на патологию эндометрия / нельзя исключить патологию эндометрия
+- id: omt_giperplaziya_endometriya_51
+  synonyms:
+  - гиперплазия эндометрия
+  - полипоз эндометрия
+  - гиперплазия + полипоз
+  - сочетанная патология эндометрия
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Гиперплазия эндометрия / полипоз эндометрия / гиперплазия + полипоз / сочетанная патология эндометрия
+- id: omt_multifollikulyarnye_yaichniki_52
+  synonyms:
+  - мультифолликулярные яичники
+  - поликистозные яичники
+  - множественные фолликулы
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Мультифолликулярные яичники / поликистозные яичники / множественные фолликулы
+- id: omt_kosvennye_priznaki_spaechnogo_protsessa
+  synonyms:
+  - косвенные признаки спаечного процесса
+  - спаечный процесс в малом тазу
+  specialist:
+  - Гинеколог
+  is_negative: false
+  urgency: planned
+  source: Косвенные признаки спаечного процесса / спаечный процесс в малом тазу

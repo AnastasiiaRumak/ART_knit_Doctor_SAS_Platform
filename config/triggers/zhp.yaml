@@ -1,0 +1,257 @@
+# Автоматически сгенерировано parse_tables.py
+# Источник: zhp
+# НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ — правьте исходные таблицы и перезапускайте
+
+organ_code: zhp
+organ_name: Желчный пузырь и гепатобилиарная зона
+keywords:
+- желчный пузырь
+- жп
+- печень
+- поджелудочная железа
+- холедох
+- портальная вена
+- желчевыводящие
+- гепатомегалия
+- холецистит
+- конкременты
+- полип желчного пузыря
+findings:
+- id: zhp_deformatsiya_zhelchnogo_puzyrya
+  synonyms:
+  - деформация желчного пузыря
+  - перегиб
+  - изгиб
+  - загиб
+  - перетяжка
+  - s-образная деформация
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Деформация желчного пузыря / перегиб / изгиб / загиб / перетяжка / S-образная деформация
+- id: zhp_diskineziya_zhelchnogo_puzyrya_po_gipomo
+  synonyms:
+  - дискинезия желчного пузыря по гипомоторному типу
+  - гипокинезия
+  - снижение сократительной функции
+  - гипомоторная дисфункция
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Дискинезия желчного пузыря по гипомоторному типу / гипокинезия / снижение сократительной функции / гипомоторная
+    дисфункция
+- id: zhp_holestaz
+  synonyms:
+  - холестаз
+  - застой желчи
+  - нарушение оттока желчи
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Холестаз / застой желчи / нарушение оттока желчи
+- id: zhp_sladzh
+  synonyms:
+  - сладж
+  - взвесь
+  - осадок
+  - микролиты
+  - билиарный сладж
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Сладж / взвесь / осадок / микролиты / билиарный сладж
+- id: zhp_polip_zhelchnogo_puzyrya
+  synonyms:
+  - полип желчного пузыря
+  - пристеночное образование
+  - гиперэхогенное несмещаемое образование
+  - аваскулярное образование
+  specialist:
+  - Гастроэнтеролог
+  - Хирург
+  is_negative: false
+  urgency: planned
+  source: Полип желчного пузыря / пристеночное образование / гиперэхогенное несмещаемое образование / аваскулярное образование
+- id: zhp_holesteroz
+  synonyms:
+  - холестероз
+  - холестероз стенки жп
+  - отложение холестерина
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Холестероз / холестероз стенки ЖП / отложение холестерина
+- id: zhp_konkrementy_zhelchnogo_puzyrya
+  synonyms:
+  - конкременты желчного пузыря
+  - камни
+  - холецистолитиаз
+  - калькулез
+  specialist:
+  - Хирург
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Конкременты желчного пузыря / камни / холецистолитиаз / калькулез
+- id: zhp_hronicheskiy_holetsistit
+  synonyms:
+  - хронический холецистит
+  - хроническое воспаление жп
+  - калькулезный холецистит
+  specialist:
+  - Хирург
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Хронический холецистит / хроническое воспаление ЖП / калькулезный холецистит
+- id: zhp_sostoyanie_posle_holetsistektomii
+  synonyms:
+  - состояние после холецистэктомии
+  - жп удален
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Состояние после холецистэктомии / ЖП удален
+- id: zhp_gepatomegaliya
+  synonyms:
+  - гепатомегалия
+  - увеличение печени
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Гепатомегалия / увеличение печени
+- id: zhp_diffuznye_izmeneniya_pecheni
+  synonyms:
+  - диффузные изменения печени
+  - диффузные изменения паренхимы
+  - неоднородность структуры
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Диффузные изменения печени / диффузные изменения паренхимы / неоднородность структуры
+- id: zhp_zhirovoy_gepatoz
+  synonyms:
+  - жировой гепатоз
+  - стеатоз
+  - жировая инфильтрация
+  - жировая дистрофия
+  specialist:
+  - Гастроэнтеролог
+  - Эндокринолог
+  is_negative: false
+  urgency: planned
+  source: Жировой гепатоз / стеатоз / жировая инфильтрация / жировая дистрофия
+- id: zhp_povyshenie_ehogennosti_pecheni
+  synonyms:
+  - повышение эхогенности печени
+  - гиперэхогенность
+  - повышенная эхогенность паренхимы
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Повышение эхогенности печени / гиперэхогенность / повышенная эхогенность паренхимы
+- id: zhp_obednenie_sosudistogo_risunka_pecheni
+  synonyms:
+  - обеднение сосудистого рисунка печени
+  - обедненный сосудистый рисунок
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Обеднение сосудистого рисунка печени / обедненный сосудистый рисунок
+- id: zhp_gemangioma_pecheni
+  synonyms:
+  - гемангиома печени
+  - доброкачественное сосудистое образование
+  specialist:
+  - Гастроэнтеролог
+  - Хирург
+  is_negative: false
+  urgency: planned
+  source: Гемангиома печени / доброкачественное сосудистое образование
+- id: zhp_diffuznye_izmeneniya_podzheludochnoy_zhe
+  synonyms:
+  - диффузные изменения поджелудочной железы
+  - диффузные изменения паренхимы
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Диффузные изменения поджелудочной железы / диффузные изменения паренхимы
+- id: zhp_steatoz_podzheludochnoy_zhelezy
+  synonyms:
+  - стеатоз поджелудочной железы
+  - липоматоз
+  - жировая инфильтрация
+  specialist:
+  - Гастроэнтеролог
+  - Эндокринолог
+  is_negative: false
+  urgency: planned
+  source: Стеатоз поджелудочной железы / липоматоз / жировая инфильтрация
+- id: zhp_povyshenie_ehogennosti_podzheludochnoy_z
+  synonyms:
+  - повышение эхогенности поджелудочной железы
+  - гиперэхогенность
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Повышение эхогенности поджелудочной железы / гиперэхогенность
+- id: zhp_neodnorodnost_podzheludochnoy_zhelezy
+  synonyms:
+  - неоднородность поджелудочной железы
+  - диффузно неоднородная структура
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Неоднородность поджелудочной железы / диффузно неоднородная структура
+- id: zhp_uvelichenie_podzheludochnoy_zhelezy
+  synonyms:
+  - увеличение поджелудочной железы
+  - увеличение размеров
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Увеличение поджелудочной железы / увеличение размеров
+- id: zhp_pnevmatoz_kishechnika
+  synonyms:
+  - пневматоз кишечника
+  - повышенное газообразование
+  - метеоризм
+  - гиперпневматоз
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Пневматоз кишечника / повышенное газообразование / метеоризм / гиперпневматоз
+- id: zhp_gastrostaz
+  synonyms:
+  - гастростаз
+  - задержка эвакуации из желудка
+  specialist:
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Гастростаз / задержка эвакуации из желудка
+- id: zhp_divertikuly_sigmovidnoy_kishki
+  synonyms:
+  - дивертикулы сигмовидной кишки
+  - мешковидные выпячивания
+  specialist:
+  - Хирург
+  - Гастроэнтеролог
+  is_negative: false
+  urgency: planned
+  source: Дивертикулы сигмовидной кишки / мешковидные выпячивания

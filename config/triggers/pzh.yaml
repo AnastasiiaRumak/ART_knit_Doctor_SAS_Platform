@@ -1,0 +1,575 @@
+# Автоматически сгенерировано parse_tables.py
+# Источник: pzh
+# НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ — правьте исходные таблицы и перезапускайте
+
+organ_code: pzh
+organ_name: Предстательная железа
+keywords:
+- предстательная железа
+- пж
+- простата
+- семенные пузырьки
+- переходная зона
+- парапростатическая
+findings:
+- id: pzh_dgpzh
+  synonyms:
+  - дгпж
+  - доброкачественная гиперплазия предстательной железы
+  - аденома простаты
+  - гиперплазия предстательной железы
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: ДГПЖ / доброкачественная гиперплазия предстательной железы / аденома простаты / гиперплазия предстательной железы
+- id: pzh_uvelichenie_predstatelnoy_zhelezy
+  synonyms:
+  - увеличение предстательной железы
+  - увеличение объёма пж
+  - увеличение размеров железы
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Увеличение предстательной железы / увеличение объёма ПЖ / увеличение размеров железы
+- id: pzh_uvelichenie_predstatelnoy_zhelezy_1_step
+  synonyms:
+  - увеличение предстательной железы 1 степени
+  - незначительное увеличение
+  - увеличение 1 ст.
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Увеличение предстательной железы 1 степени / незначительное увеличение / увеличение 1 ст.
+- id: pzh_giperplaziya_perehodnyh_zon
+  synonyms:
+  - гиперплазия переходных зон
+  - гиперплазия переходной зоны
+  - утолщение переходных отделов
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Гиперплазия переходных зон / гиперплазия переходной зоны / утолщение переходных отделов
+- id: pzh_adenomatoznye_uzly
+  synonyms:
+  - аденоматозные узлы
+  - аденоматозный узел
+  - узлы дгпж
+  - узловая гиперплазия
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Аденоматозные узлы / аденоматозный узел / узлы ДГПЖ / узловая гиперплазия
+- id: pzh_dobrokachestvennaya_uzlovaya_giperplaziy
+  synonyms:
+  - доброкачественная узловая гиперплазия
+  - узловая форма дгпж
+  - узлы в переходной зоне
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Доброкачественная узловая гиперплазия / узловая форма ДГПЖ / узлы в переходной зоне
+- id: pzh_uzly_v_perehodnoy_zone
+  synonyms:
+  - узлы в переходной зоне
+  - узлы переходных зон
+  - аденоматозные узлы до мм
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Узлы в переходной зоне / узлы переходных зон / аденоматозные узлы до ... мм
+- id: pzh_vnutripuzyrnyy_komponent
+  synonyms:
+  - внутрипузырный компонент
+  - внутрипузырная часть
+  - выступает в просвет мочевого пузыря
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Внутрипузырный компонент / внутрипузырная часть / выступает в просвет мочевого пузыря
+- id: pzh_vnutripuzyrnyy_komponent_otsutstvuet
+  synonyms:
+  - внутрипузырный компонент отсутствует
+  - не вдается в просвет мочевого пузыря
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Внутрипузырный компонент отсутствует / не вдается в просвет мочевого пузыря
+- id: pzh_hronicheskiy_prostatit
+  synonyms:
+  - хронический простатит
+  - диффузные изменения по типу хронического простатита
+  - признаки хронического простатита
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Хронический простатит / диффузные изменения по типу хронического простатита / признаки хронического простатита
+- id: pzh_diffuznye_izmeneniya_parenhimy_predstate
+  synonyms:
+  - диффузные изменения паренхимы предстательной железы
+  - диффузные изменения пж
+  - диффузно неоднородная структура
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Диффузные изменения паренхимы предстательной железы / диффузные изменения ПЖ / диффузно неоднородная структура
+- id: pzh_diffuzno_neodnorodnaya_ehostruktura
+  synonyms:
+  - диффузно-неоднородная эхоструктура
+  - неоднородная структура
+  - эхоструктура неоднородная
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Диффузно-неоднородная эхоструктура / неоднородная структура / эхоструктура неоднородная
+- id: pzh_kaltsinaty
+  synonyms:
+  - кальцинаты
+  - кальцинаты в предстательной железе
+  - микрокальциноз
+  - кальцинаты по ходу уретры
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Кальцинаты / кальцинаты в предстательной железе / микрокальциноз / кальцинаты по ходу уретры
+- id: pzh_skopleniya_kaltsinatov
+  synonyms:
+  - скопления кальцинатов
+  - множественные кальцинаты
+  - кальцинаты в переходной зоне
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Скопления кальцинатов / множественные кальцинаты / кальцинаты в переходной зоне
+- id: pzh_periuretralnaya_kaltsifikatsiya
+  synonyms:
+  - периуретральная кальцификация
+  - кальцинаты периуретрально
+  - кальцинаты по ходу уретры
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Периуретральная кальцификация / кальцинаты периуретрально / кальцинаты по ходу уретры
+- id: pzh_uchastki_fibroza
+  synonyms:
+  - участки фиброза
+  - локальный фиброз
+  - фиброзные изменения
+  - краевой фиброз
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Участки фиброза / локальный фиброз / фиброзные изменения / краевой фиброз
+- id: pzh_retentsionnye_kisty
+  synonyms:
+  - ретенционные кисты
+  - кисты предстательной железы
+  - единичные ретенционные кисты
+  - множественные ретенционные кисты
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Ретенционные кисты / кисты предстательной железы / единичные ретенционные кисты / множественные ретенционные кисты
+- id: pzh_kista_predstatelnoy_zhelezy
+  synonyms:
+  - киста предстательной железы
+  - киста в паренхиме
+  - анэхогенное образование
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Киста предстательной железы / киста в паренхиме / анэхогенное образование
+- id: pzh_rasshirenie_melkoy_protokovoy_sistemy
+  synonyms:
+  - расширение мелкой протоковой системы
+  - расширение протоковой системы
+  - протоковая система расширена
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Расширение мелкой протоковой системы / расширение протоковой системы / протоковая система расширена
+- id: pzh_rasshirenie_protokovoy_sistemy_v_perehod
+  synonyms:
+  - расширение протоковой системы в переходной зоне
+  - протоки расширены в переходной зоне
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Расширение протоковой системы в переходной зоне / протоки расширены в переходной зоне
+- id: pzh_melkaya_protokovaya_sistema_ne_rasshiren
+  synonyms:
+  - мелкая протоковая система не расширена
+  - протоковая система не расширена
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Мелкая протоковая система не расширена / протоковая система не расширена
+- id: pzh_semennye_puzyrki_rasshireny
+  synonyms:
+  - семенные пузырьки расширены
+  - расширение семенных пузырьков
+  - семенные пузырьки до мм
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Семенные пузырьки расширены / расширение семенных пузырьков / семенные пузырьки до ... мм
+- id: pzh_semennye_puzyrki_ne_rasshireny
+  synonyms:
+  - семенные пузырьки не расширены
+  - симметричные
+  - однородные
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Семенные пузырьки не расширены / симметричные / однородные
+- id: pzh_semennye_puzyrki_s_anehogennymi_vklyuche
+  synonyms:
+  - семенные пузырьки с анэхогенными включениями
+  - жидкостный компонент в семенных пузырьках
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Семенные пузырьки с анэхогенными включениями / жидкостный компонент в семенных пузырьках
+- id: pzh_involyutivnye_izmeneniya_semennyh_puzyrk
+  synonyms:
+  - инволютивные изменения семенных пузырьков
+  - уменьшение размеров семенных желез
+  - диффузные изменения семенных пузырьков
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Инволютивные изменения семенных пузырьков / уменьшение размеров семенных желез / диффузные изменения семенных пузырьков
+- id: pzh_periprostaticheskie_veny_ne_rasshireny
+  synonyms:
+  - перипростатические вены не расширены
+  - перипростатические вены умеренно извиты
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Перипростатические вены не расширены / перипростатические вены умеренно извиты
+- id: pzh_periprostaticheskie_veny_rasshireny
+  synonyms:
+  - перипростатические вены расширены
+  - варикоз перипростатических вен
+  specialist:
+  - Уролог
+  - флеболог
+  is_negative: false
+  urgency: planned
+  source: Перипростатические вены расширены / варикоз перипростатических вен
+- id: pzh_periprostaticheskaya_kletchatka_ne_izmen
+  synonyms:
+  - перипростатическая клетчатка не изменена
+  - перипростатические ткани без особенностей
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Перипростатическая клетчатка не изменена / перипростатические ткани без особенностей
+- id: pzh_obemnye_obrazovaniya_ne_vyyavleny
+  synonyms:
+  - объёмные образования не выявлены
+  - очаговые образования не определяются
+  - образования не выявлены
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Объёмные образования не выявлены / очаговые образования не определяются / образования не выявлены
+- id: pzh_ochagovye_obrazovaniya_v_perifericheskoy
+  synonyms:
+  - очаговые образования в периферической зоне
+  - образование в периферической зоне
+  - подозрение на образование
+  specialist:
+  - Уролог
+  - онколог
+  is_negative: false
+  urgency: planned
+  source: Очаговые образования в периферической зоне / образование в периферической зоне / подозрение на образование
+- id: pzh_asimmetriya_doley
+  synonyms:
+  - асимметрия долей
+  - асимметричная форма
+  - преобладание левой доли
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Асимметрия долей / асимметричная форма / преобладание левой доли
+- id: pzh_simmetrichnaya_predstatelnaya_zheleza
+  synonyms:
+  - симметричная предстательная железа
+  - симметрична
+  - без нарушения симметрии
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Симметричная предстательная железа / симметрична / без нарушения симметрии
+- id: pzh_sglazhennaya_vnutrizhelezistaya_differen
+  synonyms:
+  - сглаженная внутрижелезистая дифференциация
+  - внутрижелезистая дифференциация сглажена
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Сглаженная внутрижелезистая дифференциация / внутрижелезистая дифференциация сглажена
+- id: pzh_ehogennost_srednyaya
+  synonyms:
+  - эхогенность средняя
+  - эхогенность смешанная
+  - эхогенность повышенная
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Эхогенность средняя / эхогенность смешанная / эхогенность повышенная
+- id: pzh_vaskulyarizatsiya_ne_izmenena
+  synonyms:
+  - васкуляризация не изменена
+  - васкуляризация нормальная
+  - кровоток без особенностей
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Васкуляризация не изменена / васкуляризация нормальная / кровоток без особенностей
+- id: pzh_vaskulyarizatsiya_usilena
+  synonyms:
+  - васкуляризация усилена
+  - кровоток усилен
+  - умеренно усилен
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Васкуляризация усилена / кровоток усилен / умеренно усилен
+- id: pzh_vaskulyarizatsiya_obednena
+  synonyms:
+  - васкуляризация обеднена
+  - обеднённый кровоток
+  - снижение васкуляризации
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Васкуляризация обеднена / обеднённый кровоток / снижение васкуляризации
+- id: pzh_perinodulyarnyy_sosudistyy_obodok
+  synonyms:
+  - перинодулярный сосудистый ободок
+  - огибающие сосуды
+  - гиперпластический тип сосудистого рисунка
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Перинодулярный сосудистый ободок / огибающие сосуды / гиперпластический тип сосудистого рисунка
+- id: pzh_prostaticheskaya_chast_uretry_ne_rasshir
+  synonyms:
+  - простатическая часть уретры не расширена
+  - уретра не деформирована
+  - уретра не изменена
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Простатическая часть уретры не расширена / уретра не деформирована / уретра не изменена
+- id: pzh_prostaticheskaya_chast_uretry_rasshirena
+  synonyms:
+  - простатическая часть уретры расширена
+  - деформация уретры
+  - сужение уретры
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Простатическая часть уретры расширена / деформация уретры / сужение уретры
+- id: pzh_ostatochnaya_mocha
+  synonyms:
+  - остаточная моча
+  - объём остаточной мочи
+  - residual urine
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Остаточная моча / объём остаточной мочи / residual urine
+- id: pzh_obem_ostatochnoy_mochi_7_ml
+  synonyms:
+  - объём остаточной мочи 7 мл
+  - остаточная моча 7 см3
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Объём остаточной мочи 7 мл / остаточная моча 7 см3
+- id: pzh_obem_ostatochnoy_mochi_87_ml
+  synonyms:
+  - объём остаточной мочи 87 мл
+  - остаточная моча 87 мл
+  - избыточное количество остаточной мочи
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Объём остаточной мочи 87 мл / остаточная моча 87 мл / избыточное количество остаточной мочи
+- id: pzh_obem_ostatochnoy_mochi_100_ml
+  synonyms:
+  - объём остаточной мочи 100 мл
+  - остаточная моча 100 мл
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Объём остаточной мочи 100 мл / остаточная моча 100 мл
+- id: pzh_narushenie_passazha_mochi
+  synonyms:
+  - нарушение пассажа мочи
+  - нарушение оттока мочи
+  - затруднённое мочеиспускание
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Нарушение пассажа мочи / нарушение оттока мочи / затруднённое мочеиспускание
+- id: pzh_mochevoy_puzyr_bez_osobennostey
+  synonyms:
+  - мочевой пузырь без особенностей
+  - стенки тонкие
+  - ровные
+  - достаточно наполнения
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Мочевой пузырь без особенностей / стенки тонкие, ровные / достаточно наполнения
+- id: pzh_utolschenie_stenok_mochevogo_puzyrya
+  synonyms:
+  - утолщение стенок мочевого пузыря
+  - стенки мочевого пузыря утолщены
+  - трабекулярность
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Утолщение стенок мочевого пузыря / стенки мочевого пузыря утолщены / трабекулярность
+- id: pzh_obem_predstatelnoy_zhelezy_v_norme
+  synonyms:
+  - объём предстательной железы в норме
+  - объём до 25 см3
+  - норма до 27 см3
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Объём предстательной железы в норме / объём до 25 см3 / норма до 27 см3
+- id: pzh_obem_predstatelnoy_zhelezy_uvelichen
+  synonyms:
+  - объём предстательной железы увеличен
+  - объём 64 см3
+  - объём 68
+  - 8 мл
+  - объём 56
+  - 7 см3
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Объём предстательной железы увеличен / объём 64 см3 / объём 68,8 мл / объём 56,7 см3
+- id: pzh_razmery_predstatelnoy_zhelezy_uvelicheny
+  synonyms:
+  - размеры предстательной железы увеличены
+  - размеры 61х40х52
+  - размеры 57х41х53
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Размеры предстательной железы увеличены / размеры 61х40х52 / размеры 57х41х53
+- id: pzh_razmery_predstatelnoy_zhelezy_v_norme
+  synonyms:
+  - размеры предстательной железы в норме
+  - размеры 45х35х24
+  - размеры 34х32х44
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Размеры предстательной железы в норме / размеры 45х35х24 / размеры 34х32х44
+- id: pzh_kontury_rovnye
+  synonyms:
+  - контуры ровные
+  - чёткие
+  - капсула прослеживается
+  - контур ровный
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Контуры ровные, чёткие / капсула прослеживается / контур ровный
+- id: pzh_kontury_nerovnye
+  synonyms:
+  - контуры неровные
+  - контур неровный
+  - капсула не прослеживается
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Контуры неровные / контур неровный / капсула не прослеживается
+- id: pzh_forma_obychnaya
+  synonyms:
+  - форма обычная
+  - форма правильная
+  - форма шаровидная
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Форма обычная / форма правильная / форма шаровидная
+- id: pzh_forma_nepravilnaya_ovoidnaya
+  synonyms:
+  - форма неправильная овоидная
+  - форма трапециевидная
+  - деформация железы
+  specialist:
+  - Уролог
+  is_negative: false
+  urgency: planned
+  source: Форма неправильная овоидная / форма трапециевидная / деформация железы
+- id: pzh_ehogrammy_vydany
+  synonyms:
+  - эхограммы выданы
+  - эхограммы прилагаются
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Эхограммы выданы / эхограммы прилагаются
+- id: pzh_akusticheskiy_dostup_udovletvoritelnyy
+  synonyms:
+  - акустический доступ удовлетворительный
+  - акустический доступ без особенностей
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Акустический доступ удовлетворительный / акустический доступ без особенностей
+- id: pzh_sledov_krovi_na_datchike_ne_vyyavleno
+  synonyms:
+  - следов крови на датчике не выявлено
+  - без осложнений
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Следов крови на датчике не выявлено / без осложнений

@@ -1,0 +1,1791 @@
+{
+  "summary": {
+    "total_protocols": 89,
+    "total_assigned": 86,
+    "total_no_action": 3,
+    "total_errors": 0,
+    "avg_duration_ms": 479.53,
+    "total_duration_ms": 42678.4
+  },
+  "by_organ": {
+    "протоколы Ж ОМТ": {
+      "total": 25,
+      "assigned": 24,
+      "no_action": 1,
+      "errors": 0,
+      "findings_total": 221,
+      "duration_ms": 12973.79
+    },
+    "протоколы ЖП": {
+      "total": 25,
+      "assigned": 24,
+      "no_action": 1,
+      "errors": 0,
+      "findings_total": 138,
+      "duration_ms": 7271.86
+    },
+    "протоколы вены нижних конечностей": {
+      "total": 9,
+      "assigned": 9,
+      "no_action": 0,
+      "errors": 0,
+      "findings_total": 291,
+      "duration_ms": 10487.9
+    },
+    "протоколы молочная железа": {
+      "total": 10,
+      "assigned": 10,
+      "no_action": 0,
+      "errors": 0,
+      "findings_total": 277,
+      "duration_ms": 4783.31
+    },
+    "протоколы предстательная железа": {
+      "total": 10,
+      "assigned": 9,
+      "no_action": 1,
+      "errors": 0,
+      "findings_total": 207,
+      "duration_ms": 5173.93
+    },
+    "протоколы щитовидная железа": {
+      "total": 10,
+      "assigned": 10,
+      "no_action": 0,
+      "errors": 0,
+      "findings_total": 117,
+      "duration_ms": 1987.61
+    }
+  },
+  "details": [
+    {
+      "file": "1 Ж ОМТ (1).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 68276,
+      "sentences_total": 1870,
+      "findings_total": 6,
+      "findings_positive": 6,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_paraovarialnaya_kista",
+      "primary_finding_synonym": "параовариальная киста",
+      "primary_organ": "omt",
+      "duration_ms": 720.76,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (10).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 27070,
+      "sentences_total": 977,
+      "findings_total": 8,
+      "findings_positive": 8,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_drugie_dobrokachestvennye_novoobrazovani",
+      "primary_finding_synonym": "другие доброкачественные новообразования тела матки",
+      "primary_organ": "omt",
+      "duration_ms": 301.67,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (11).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 60125,
+      "sentences_total": 1322,
+      "findings_total": 2,
+      "findings_positive": 2,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_mioma_matki",
+      "primary_finding_synonym": "миома матки",
+      "primary_organ": "omt",
+      "duration_ms": 543.52,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (12).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 45291,
+      "sentences_total": 941,
+      "findings_total": 7,
+      "findings_positive": 7,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_kisty_sheyki_matki",
+      "primary_finding_synonym": "кисты шейки матки",
+      "primary_organ": "omt",
+      "duration_ms": 411.62,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (13).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 52013,
+      "sentences_total": 1420,
+      "findings_total": 18,
+      "findings_positive": 18,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_intramuralnaya_leyomioma_matki",
+      "primary_finding_synonym": "интрамуральная лейомиома матки",
+      "primary_organ": "omt",
+      "duration_ms": 554.62,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (14).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 46002,
+      "sentences_total": 1329,
+      "findings_total": 13,
+      "findings_positive": 11,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_mioma_matki",
+      "primary_finding_synonym": "миома матки",
+      "primary_organ": "omt",
+      "duration_ms": 465.97,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (15).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 86566,
+      "sentences_total": 1678,
+      "findings_total": 13,
+      "findings_positive": 13,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_endometrioz_matki",
+      "primary_finding_synonym": "эндометриоз тела матки",
+      "primary_organ": "omt",
+      "duration_ms": 740.18,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (16).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 50140,
+      "sentences_total": 1230,
+      "findings_total": 9,
+      "findings_positive": 5,
+      "findings_negative": 4,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог",
+        "Флеболог",
+        "гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_varikoznoe_rasshirenie_ven_malogo_taza",
+      "primary_finding_synonym": "варикозное расширение вен малого таза",
+      "primary_organ": "omt",
+      "duration_ms": 471.79,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (17).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 51136,
+      "sentences_total": 854,
+      "findings_total": 14,
+      "findings_positive": 14,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог",
+        "Онколог"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "omt_giperplaziya_endometriya",
+      "primary_finding_synonym": "гиперплазия эндометрия",
+      "primary_organ": "omt",
+      "duration_ms": 499.84,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (18).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 63454,
+      "sentences_total": 1314,
+      "findings_total": 4,
+      "findings_positive": 4,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_svobodnaya_zhidkost_v_malom_tazu",
+      "primary_finding_synonym": "свободная жидкость в малом тазу",
+      "primary_organ": "omt",
+      "duration_ms": 536.18,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (19).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 40036,
+      "sentences_total": 1002,
+      "findings_total": 3,
+      "findings_positive": 2,
+      "findings_negative": 1,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_mioma_matki",
+      "primary_finding_synonym": "миома матки",
+      "primary_organ": "omt",
+      "duration_ms": 348.52,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (2).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 78647,
+      "sentences_total": 1619,
+      "findings_total": 8,
+      "findings_positive": 8,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_diffuznye_izmeneniya_miometriya",
+      "primary_finding_synonym": "диффузные изменения миометрия",
+      "primary_organ": "omt",
+      "duration_ms": 651.07,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (20).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 55927,
+      "sentences_total": 288,
+      "findings_total": 2,
+      "findings_positive": 2,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_mioma_matki",
+      "primary_finding_synonym": "миома матки",
+      "primary_organ": "omt",
+      "duration_ms": 334.4,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (21).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 56634,
+      "sentences_total": 1597,
+      "findings_total": 32,
+      "findings_positive": 32,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_gidrosalpings",
+      "primary_finding_synonym": "гидросальпингс справа",
+      "primary_organ": "omt",
+      "duration_ms": 664.97,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (22).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 64310,
+      "sentences_total": 1412,
+      "findings_total": 10,
+      "findings_positive": 10,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_mioma_matki",
+      "primary_finding_synonym": "миома матки",
+      "primary_organ": "omt",
+      "duration_ms": 546.49,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (23).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 62927,
+      "sentences_total": 945,
+      "findings_total": 3,
+      "findings_positive": 3,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_dominantnyy_follikul",
+      "primary_finding_synonym": "доминантный фолликул",
+      "primary_organ": "omt",
+      "duration_ms": 478.48,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (24).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 44714,
+      "sentences_total": 864,
+      "findings_total": 3,
+      "findings_positive": 3,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_kisty_sheyki_matki",
+      "primary_finding_synonym": "кисты шейки матки",
+      "primary_organ": "omt",
+      "duration_ms": 361.48,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (25).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 87810,
+      "sentences_total": 1700,
+      "findings_total": 4,
+      "findings_positive": 2,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_diffuznye_izmeneniya_miometriya",
+      "primary_finding_synonym": "диффузные изменения миометрия",
+      "primary_organ": "omt",
+      "duration_ms": 700.92,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (3).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 41206,
+      "sentences_total": 514,
+      "findings_total": 2,
+      "findings_positive": 2,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог",
+        "Флеболог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_rasshirenie_ven_parametralnogo_spleteniy",
+      "primary_finding_synonym": "параметральные вены расширены до 7 мм",
+      "primary_organ": "omt",
+      "duration_ms": 290.39,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (4).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 59785,
+      "sentences_total": 1049,
+      "findings_total": 0,
+      "findings_positive": 0,
+      "findings_negative": 0,
+      "status": "no_action",
+      "specialist": [],
+      "urgency": "planned",
+      "primary_finding_id": "",
+      "primary_finding_synonym": "",
+      "primary_organ": "",
+      "duration_ms": 447.57,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (5).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 77091,
+      "sentences_total": 1202,
+      "findings_total": 13,
+      "findings_positive": 11,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_diffuznye_izmeneniya_miometriya",
+      "primary_finding_synonym": "диффузные изменения миометрия",
+      "primary_organ": "omt",
+      "duration_ms": 589.81,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (6).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 120885,
+      "sentences_total": 1323,
+      "findings_total": 17,
+      "findings_positive": 17,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог",
+        "Флеболог",
+        "гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_varikoznoe_rasshirenie_ven_malogo_taza",
+      "primary_finding_synonym": "варикозное расширение вен малого таза",
+      "primary_organ": "omt",
+      "duration_ms": 903.79,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (7).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 78935,
+      "sentences_total": 1133,
+      "findings_total": 6,
+      "findings_positive": 6,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог",
+        "Флеболог",
+        "гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_varikoznoe_rasshirenie_ven_malogo_taza",
+      "primary_finding_synonym": "варикозное расширение вен малого таза",
+      "primary_organ": "omt",
+      "duration_ms": 619.08,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (8).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 43216,
+      "sentences_total": 1014,
+      "findings_total": 15,
+      "findings_positive": 15,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_zhidkostnoe_obrazovanie_yaichnika",
+      "primary_finding_synonym": "аваскулярное образование",
+      "primary_organ": "omt",
+      "duration_ms": 460.6,
+      "error": ""
+    },
+    {
+      "file": "1 Ж ОМТ (9).docx",
+      "organ_folder": "протоколы Ж ОМТ",
+      "text_length": 24159,
+      "sentences_total": 950,
+      "findings_total": 9,
+      "findings_positive": 9,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гинеколог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "omt_endometrioidnaya_kista_yaichnika",
+      "primary_finding_synonym": "киста правого яичника",
+      "primary_organ": "omt",
+      "duration_ms": 330.07,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (1).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 64021,
+      "sentences_total": 1939,
+      "findings_total": 4,
+      "findings_positive": 4,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_diskineziya_zhelchnogo_puzyrya_po_gipomo",
+      "primary_finding_synonym": "дискинезия желчного пузыря по гипомоторному типу",
+      "primary_organ": "zhp",
+      "duration_ms": 329.15,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (10).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 53175,
+      "sentences_total": 1018,
+      "findings_total": 6,
+      "findings_positive": 6,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_diffuznye_izmeneniya_pecheni",
+      "primary_finding_synonym": "диффузные изменения паренхимы",
+      "primary_organ": "zhp",
+      "duration_ms": 243.6,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (11).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 56427,
+      "sentences_total": 1600,
+      "findings_total": 11,
+      "findings_positive": 10,
+      "findings_negative": 1,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург",
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_polip_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "гиперэхогенное несмещаемое образование",
+      "primary_organ": "zhp",
+      "duration_ms": 302.9,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (12).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 58022,
+      "sentences_total": 1669,
+      "findings_total": 5,
+      "findings_positive": 4,
+      "findings_negative": 1,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_deformatsiya_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "деформация желчного пузыря",
+      "primary_organ": "zhp",
+      "duration_ms": 292.29,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (13).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 31698,
+      "sentences_total": 642,
+      "findings_total": 1,
+      "findings_positive": 1,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_konkrementy_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "конкременты желчного пузыря",
+      "primary_organ": "zhp",
+      "duration_ms": 144.71,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (14).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 28381,
+      "sentences_total": 678,
+      "findings_total": 5,
+      "findings_positive": 5,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_sladzh",
+      "primary_finding_synonym": "билиарный сладж",
+      "primary_organ": "zhp",
+      "duration_ms": 168.35,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (15).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 17947,
+      "sentences_total": 449,
+      "findings_total": 1,
+      "findings_positive": 1,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_deformatsiya_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "загиб",
+      "primary_organ": "zhp",
+      "duration_ms": 92.92,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (16).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 25262,
+      "sentences_total": 521,
+      "findings_total": 1,
+      "findings_positive": 0,
+      "findings_negative": 1,
+      "status": "no_action",
+      "specialist": [],
+      "urgency": "planned",
+      "primary_finding_id": "",
+      "primary_finding_synonym": "",
+      "primary_organ": "",
+      "duration_ms": 114.37,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (17).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 57525,
+      "sentences_total": 1894,
+      "findings_total": 5,
+      "findings_positive": 5,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_deformatsiya_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "перегиб",
+      "primary_organ": "zhp",
+      "duration_ms": 305.16,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (18).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 88777,
+      "sentences_total": 1432,
+      "findings_total": 5,
+      "findings_positive": 5,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_polip_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "полип желчного пузыря",
+      "primary_organ": "zhp",
+      "duration_ms": 402.77,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (19).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 93138,
+      "sentences_total": 2301,
+      "findings_total": 2,
+      "findings_positive": 2,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_deformatsiya_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "перегиб",
+      "primary_organ": "zhp",
+      "duration_ms": 429.3,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (2).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 77272,
+      "sentences_total": 1244,
+      "findings_total": 5,
+      "findings_positive": 4,
+      "findings_negative": 1,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_steatoz_podzheludochnoy_zhelezy",
+      "primary_finding_synonym": "жировая инфильтрация",
+      "primary_organ": "zhp",
+      "duration_ms": 345.97,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (20).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 81258,
+      "sentences_total": 2385,
+      "findings_total": 8,
+      "findings_positive": 2,
+      "findings_negative": 6,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_polip_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "полип желчного пузыря",
+      "primary_organ": "zhp",
+      "duration_ms": 412.06,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (21).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 77854,
+      "sentences_total": 2385,
+      "findings_total": 10,
+      "findings_positive": 5,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_gemangioma_pecheni",
+      "primary_finding_synonym": "гемангиома печени",
+      "primary_organ": "zhp",
+      "duration_ms": 410.5,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (22).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 59969,
+      "sentences_total": 554,
+      "findings_total": 6,
+      "findings_positive": 5,
+      "findings_negative": 1,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_polip_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "полип желчного пузыря",
+      "primary_organ": "zhp",
+      "duration_ms": 275.94,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (23).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 54013,
+      "sentences_total": 554,
+      "findings_total": 3,
+      "findings_positive": 3,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_diffuznye_izmeneniya_pecheni",
+      "primary_finding_synonym": "диффузные изменения печени",
+      "primary_organ": "zhp",
+      "duration_ms": 227.58,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (24).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 97841,
+      "sentences_total": 1694,
+      "findings_total": 8,
+      "findings_positive": 8,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_divertikuly_sigmovidnoy_kishki",
+      "primary_finding_synonym": "дивертикулы сигмовидной кишки",
+      "primary_organ": "zhp",
+      "duration_ms": 460.35,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (25).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 69269,
+      "sentences_total": 1471,
+      "findings_total": 4,
+      "findings_positive": 4,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_polip_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "пристеночное образование",
+      "primary_organ": "zhp",
+      "duration_ms": 332.49,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (3).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 79354,
+      "sentences_total": 1017,
+      "findings_total": 9,
+      "findings_positive": 7,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Хирург",
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_hronicheskiy_holetsistit",
+      "primary_finding_synonym": "хронический холецистит",
+      "primary_organ": "zhp",
+      "duration_ms": 362.07,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (4).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 53359,
+      "sentences_total": 996,
+      "findings_total": 8,
+      "findings_positive": 8,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_zhirovoy_gepatoz",
+      "primary_finding_synonym": "жировой гепатоз",
+      "primary_organ": "zhp",
+      "duration_ms": 276.33,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (5).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 52214,
+      "sentences_total": 986,
+      "findings_total": 8,
+      "findings_positive": 8,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог",
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_zhirovoy_gepatoz",
+      "primary_finding_synonym": "жировой гепатоз",
+      "primary_organ": "zhp",
+      "duration_ms": 279.01,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (6).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 57752,
+      "sentences_total": 1616,
+      "findings_total": 11,
+      "findings_positive": 11,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_diffuznye_izmeneniya_pecheni",
+      "primary_finding_synonym": "диффузные изменения паренхимы",
+      "primary_organ": "zhp",
+      "duration_ms": 351.71,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (7).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 55106,
+      "sentences_total": 753,
+      "findings_total": 6,
+      "findings_positive": 6,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_deformatsiya_zhelchnogo_puzyrya",
+      "primary_finding_synonym": "загиб",
+      "primary_organ": "zhp",
+      "duration_ms": 241.21,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (8).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 53560,
+      "sentences_total": 754,
+      "findings_total": 3,
+      "findings_positive": 3,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_sladzh",
+      "primary_finding_synonym": "взвесь",
+      "primary_organ": "zhp",
+      "duration_ms": 230.25,
+      "error": ""
+    },
+    {
+      "file": "1 ЖП (9).docx",
+      "organ_folder": "протоколы ЖП",
+      "text_length": 50107,
+      "sentences_total": 1056,
+      "findings_total": 3,
+      "findings_positive": 3,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Гастроэнтеролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "zhp_diffuznye_izmeneniya_pecheni",
+      "primary_finding_synonym": "диффузные изменения паренхимы",
+      "primary_organ": "zhp",
+      "duration_ms": 240.87,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (10).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 45422,
+      "sentences_total": 516,
+      "findings_total": 4,
+      "findings_positive": 4,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Сосудистый хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "nk_ateroskleroz",
+      "primary_finding_synonym": "атеросклероз артерий",
+      "primary_organ": "nk",
+      "duration_ms": 499.75,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (2).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 70594,
+      "sentences_total": 1235,
+      "findings_total": 9,
+      "findings_positive": 7,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Сосудистый хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "nk_edinichnye_pristenochnye_kaltsinirovanny",
+      "primary_finding_synonym": "единичные пристеночные кальцинированные асб",
+      "primary_organ": "nk",
+      "duration_ms": 938.43,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (3).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 135138,
+      "sentences_total": 1536,
+      "findings_total": 93,
+      "findings_positive": 88,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Сосудистый хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "nk_asb",
+      "primary_finding_synonym": "атеросклеротическая бляшка",
+      "primary_organ": "nk",
+      "duration_ms": 1874.23,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (4).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 87059,
+      "sentences_total": 940,
+      "findings_total": 7,
+      "findings_positive": 7,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Сосудистый хирург",
+        "Флеболог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "nk_kim_=_1",
+      "primary_finding_synonym": "2 мм",
+      "primary_organ": "nk",
+      "duration_ms": 982.29,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (5).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 104279,
+      "sentences_total": 1540,
+      "findings_total": 43,
+      "findings_positive": 29,
+      "findings_negative": 14,
+      "status": "assigned",
+      "specialist": [
+        "Сосудистый хирург",
+        "Флеболог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "nk_i839",
+      "primary_finding_synonym": "варикозное расширение вен",
+      "primary_organ": "nk",
+      "duration_ms": 1420.36,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (6).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 59361,
+      "sentences_total": 868,
+      "findings_total": 52,
+      "findings_positive": 46,
+      "findings_negative": 6,
+      "status": "assigned",
+      "specialist": [
+        "Сосудистый хирург"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "nk_okklyuziya_levoy_zbba",
+      "primary_finding_synonym": "окклюзия левой збба",
+      "primary_organ": "nk",
+      "duration_ms": 932.42,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (7).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 55541,
+      "sentences_total": 934,
+      "findings_total": 19,
+      "findings_positive": 10,
+      "findings_negative": 9,
+      "status": "assigned",
+      "specialist": [
+        "Сосудистый хирург",
+        "Флеболог",
+        "флеболог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "nk_nesostoyatelnost_stvola_bpv_sleva",
+      "primary_finding_synonym": "несостоятельность ствола бпв слева",
+      "primary_organ": "nk",
+      "duration_ms": 725.69,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (8).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 92758,
+      "sentences_total": 2051,
+      "findings_total": 31,
+      "findings_positive": 31,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Сосудистый хирург",
+        "Флеболог",
+        "флеболог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "nk_hronicheskoe_zabolevanie_ven_nog_c1s_ep_",
+      "primary_finding_synonym": "хроническое заболевание вен ног c1s ep as pr1 lii",
+      "primary_organ": "nk",
+      "duration_ms": 1395.24,
+      "error": ""
+    },
+    {
+      "file": "нижние конечности (9).docx",
+      "organ_folder": "протоколы вены нижних конечностей",
+      "text_length": 108126,
+      "sentences_total": 2195,
+      "findings_total": 33,
+      "findings_positive": 32,
+      "findings_negative": 1,
+      "status": "assigned",
+      "specialist": [
+        "Флеболог",
+        "Хирург"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "nk_vospalitelnye_izmeneniya_pzhk",
+      "primary_finding_synonym": "воспалительные изменения пжк",
+      "primary_organ": "nk",
+      "duration_ms": 1719.49,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (1).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 61126,
+      "sentences_total": 1265,
+      "findings_total": 28,
+      "findings_positive": 23,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "mzh_mastopatiya",
+      "primary_finding_synonym": "уз-признаки мастопатии",
+      "primary_organ": "mzh",
+      "duration_ms": 583.64,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (10).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 38069,
+      "sentences_total": 678,
+      "findings_total": 22,
+      "findings_positive": 17,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог",
+        "Пластический хирург",
+        "онколог",
+        "пластический хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "mzh_implanty_molochnyh_zhelez",
+      "primary_finding_synonym": "состояние после маммопластики",
+      "primary_organ": "mzh",
+      "duration_ms": 357.55,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (2).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 81423,
+      "sentences_total": 1318,
+      "findings_total": 31,
+      "findings_positive": 26,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог",
+        "хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "mzh_avaskulyarnoe_obrazovanie",
+      "primary_finding_synonym": "при цдк аваскулярное",
+      "primary_organ": "mzh",
+      "duration_ms": 879.52,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (3).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 61506,
+      "sentences_total": 1485,
+      "findings_total": 45,
+      "findings_positive": 33,
+      "findings_negative": 12,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог",
+        "Онколог"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "mzh_bi_rads_4",
+      "primary_finding_synonym": "bi-rads 4",
+      "primary_organ": "mzh",
+      "duration_ms": 598.86,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (4).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 49878,
+      "sentences_total": 1487,
+      "findings_total": 34,
+      "findings_positive": 19,
+      "findings_negative": 15,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог",
+        "Онколог"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "mzh_ochagovoe_obrazovanie_molochnoy_zhelezy",
+      "primary_finding_synonym": "объемное образование",
+      "primary_organ": "mzh",
+      "duration_ms": 515.61,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (5).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 18158,
+      "sentences_total": 532,
+      "findings_total": 24,
+      "findings_positive": 19,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "mzh_diffuznye_izmeneniya_molochnyh_zhelez",
+      "primary_finding_synonym": "диффузные изменения",
+      "primary_organ": "mzh",
+      "duration_ms": 211.97,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (6).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 54740,
+      "sentences_total": 891,
+      "findings_total": 15,
+      "findings_positive": 15,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог",
+        "Пластический хирург",
+        "пластический хирург",
+        "хирург"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "mzh_sostoyanie_posle_mastopeksii",
+      "primary_finding_synonym": "состояние после мастопексии",
+      "primary_organ": "mzh",
+      "duration_ms": 451.85,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (7).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 37720,
+      "sentences_total": 792,
+      "findings_total": 22,
+      "findings_positive": 14,
+      "findings_negative": 8,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "mzh_diffuznye_izmeneniya_molochnyh_zhelez",
+      "primary_finding_synonym": "диффузные изменения",
+      "primary_organ": "mzh",
+      "duration_ms": 346.24,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (8).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 31952,
+      "sentences_total": 674,
+      "findings_total": 16,
+      "findings_positive": 11,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "mzh_kistoznaya_mastopatiya",
+      "primary_finding_synonym": "мелкокистозный компонент",
+      "primary_organ": "mzh",
+      "duration_ms": 291.87,
+      "error": ""
+    },
+    {
+      "file": "молочн железа (9).docx",
+      "organ_folder": "протоколы молочная железа",
+      "text_length": 53379,
+      "sentences_total": 1245,
+      "findings_total": 40,
+      "findings_positive": 40,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "mzh_avaskulyarnoe_obrazovanie",
+      "primary_finding_synonym": "при цдк аваскулярное",
+      "primary_organ": "mzh",
+      "duration_ms": 546.2,
+      "error": ""
+    },
+    {
+      "file": "простата (1).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 35608,
+      "sentences_total": 824,
+      "findings_total": 17,
+      "findings_positive": 11,
+      "findings_negative": 6,
+      "status": "assigned",
+      "specialist": [
+        "Уролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "pzh_diffuznye_izmeneniya_parenhimy_predstate",
+      "primary_finding_synonym": "диффузные изменения паренхимы предстательной железы",
+      "primary_organ": "pzh",
+      "duration_ms": 355.59,
+      "error": ""
+    },
+    {
+      "file": "простата (10).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 49535,
+      "sentences_total": 820,
+      "findings_total": 20,
+      "findings_positive": 18,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Уролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "pzh_adenomatoznye_uzly",
+      "primary_finding_synonym": "аденоматозный узел",
+      "primary_organ": "pzh",
+      "duration_ms": 482.99,
+      "error": ""
+    },
+    {
+      "file": "простата (2).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 53787,
+      "sentences_total": 741,
+      "findings_total": 23,
+      "findings_positive": 16,
+      "findings_negative": 7,
+      "status": "assigned",
+      "specialist": [
+        "Уролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "pzh_adenomatoznye_uzly",
+      "primary_finding_synonym": "аденоматозные узлы",
+      "primary_organ": "pzh",
+      "duration_ms": 591.14,
+      "error": ""
+    },
+    {
+      "file": "простата (3).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 51520,
+      "sentences_total": 902,
+      "findings_total": 23,
+      "findings_positive": 13,
+      "findings_negative": 10,
+      "status": "assigned",
+      "specialist": [
+        "Уролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "pzh_diffuznye_izmeneniya_parenhimy_predstate",
+      "primary_finding_synonym": "диффузные изменения паренхимы предстательной железы",
+      "primary_organ": "pzh",
+      "duration_ms": 462.39,
+      "error": ""
+    },
+    {
+      "file": "простата (4).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 54464,
+      "sentences_total": 1081,
+      "findings_total": 22,
+      "findings_positive": 18,
+      "findings_negative": 4,
+      "status": "assigned",
+      "specialist": [
+        "Онколог",
+        "Уролог"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "pzh_ochagovye_obrazovaniya_v_perifericheskoy",
+      "primary_finding_synonym": "образование в периферической зоне",
+      "primary_organ": "pzh",
+      "duration_ms": 483.76,
+      "error": ""
+    },
+    {
+      "file": "простата (5).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 105106,
+      "sentences_total": 1717,
+      "findings_total": 37,
+      "findings_positive": 35,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Уролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "pzh_adenomatoznye_uzly",
+      "primary_finding_synonym": "узлы дгпж",
+      "primary_organ": "pzh",
+      "duration_ms": 956.58,
+      "error": ""
+    },
+    {
+      "file": "простата (6).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 40178,
+      "sentences_total": 980,
+      "findings_total": 9,
+      "findings_positive": 9,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Уролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "pzh_dgpzh",
+      "primary_finding_synonym": "гиперплазия предстательной железы",
+      "primary_organ": "pzh",
+      "duration_ms": 416.01,
+      "error": ""
+    },
+    {
+      "file": "простата (7).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 30389,
+      "sentences_total": 821,
+      "findings_total": 13,
+      "findings_positive": 9,
+      "findings_negative": 4,
+      "status": "no_action",
+      "specialist": [],
+      "urgency": "planned",
+      "primary_finding_id": "",
+      "primary_finding_synonym": "",
+      "primary_organ": "",
+      "duration_ms": 302.61,
+      "error": ""
+    },
+    {
+      "file": "простата (8).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 76073,
+      "sentences_total": 1464,
+      "findings_total": 22,
+      "findings_positive": 19,
+      "findings_negative": 3,
+      "status": "assigned",
+      "specialist": [
+        "Уролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "pzh_diffuzno_neodnorodnaya_ehostruktura",
+      "primary_finding_synonym": "неоднородная структура",
+      "primary_organ": "pzh",
+      "duration_ms": 677.41,
+      "error": ""
+    },
+    {
+      "file": "простата (9).docx",
+      "organ_folder": "протоколы предстательная железа",
+      "text_length": 48061,
+      "sentences_total": 829,
+      "findings_total": 21,
+      "findings_positive": 12,
+      "findings_negative": 9,
+      "status": "assigned",
+      "specialist": [
+        "Уролог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "pzh_adenomatoznye_uzly",
+      "primary_finding_synonym": "аденоматозные узлы",
+      "primary_organ": "pzh",
+      "duration_ms": 445.45,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (1).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 40754,
+      "sentences_total": 1037,
+      "findings_total": 16,
+      "findings_positive": 15,
+      "findings_negative": 1,
+      "status": "assigned",
+      "specialist": [
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "thyroid_ait",
+      "primary_finding_synonym": "диффузные изменения щитовидной железы",
+      "primary_organ": "thyroid",
+      "duration_ms": 220.89,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (10).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 21670,
+      "sentences_total": 717,
+      "findings_total": 8,
+      "findings_positive": 4,
+      "findings_negative": 4,
+      "status": "assigned",
+      "specialist": [
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "thyroid_uzel",
+      "primary_finding_synonym": "Узел щитовидной железы",
+      "primary_organ": "thyroid",
+      "duration_ms": 102.86,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (2).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 49606,
+      "sentences_total": 1198,
+      "findings_total": 19,
+      "findings_positive": 14,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "thyroid_uzel",
+      "primary_finding_synonym": "изоэхогенное образование",
+      "primary_organ": "thyroid",
+      "duration_ms": 243.14,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (3).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 31751,
+      "sentences_total": 775,
+      "findings_total": 13,
+      "findings_positive": 8,
+      "findings_negative": 5,
+      "status": "assigned",
+      "specialist": [
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "thyroid_kista",
+      "primary_finding_synonym": "киста",
+      "primary_organ": "thyroid",
+      "duration_ms": 160.67,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (4).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 36744,
+      "sentences_total": 703,
+      "findings_total": 7,
+      "findings_positive": 5,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог",
+        "Онколог"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "thyroid_uzel",
+      "primary_finding_synonym": "узловое образование",
+      "primary_organ": "thyroid",
+      "duration_ms": 187.74,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (5).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 52794,
+      "sentences_total": 1159,
+      "findings_total": 13,
+      "findings_positive": 12,
+      "findings_negative": 1,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог",
+        "Онколог"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "thyroid_uzel",
+      "primary_finding_synonym": "узловое образование",
+      "primary_organ": "thyroid",
+      "duration_ms": 242.45,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (6).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 40484,
+      "sentences_total": 1007,
+      "findings_total": 5,
+      "findings_positive": 5,
+      "findings_negative": 0,
+      "status": "assigned",
+      "specialist": [
+        "Маммолог",
+        "Онколог"
+      ],
+      "urgency": "emergency",
+      "primary_finding_id": "thyroid_uzel",
+      "primary_finding_synonym": "узловое образование",
+      "primary_organ": "thyroid",
+      "duration_ms": 178.06,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (7).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 53569,
+      "sentences_total": 1269,
+      "findings_total": 9,
+      "findings_positive": 7,
+      "findings_negative": 2,
+      "status": "assigned",
+      "specialist": [
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "thyroid_ait",
+      "primary_finding_synonym": "диффузные изменения щитовидной железы",
+      "primary_organ": "thyroid",
+      "duration_ms": 235.71,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (8).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 39254,
+      "sentences_total": 716,
+      "findings_total": 8,
+      "findings_positive": 4,
+      "findings_negative": 4,
+      "status": "assigned",
+      "specialist": [
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "thyroid_uzel",
+      "primary_finding_synonym": "узел",
+      "primary_organ": "thyroid",
+      "duration_ms": 175.08,
+      "error": ""
+    },
+    {
+      "file": "щитовидка (9).docx",
+      "organ_folder": "протоколы щитовидная железа",
+      "text_length": 55105,
+      "sentences_total": 932,
+      "findings_total": 19,
+      "findings_positive": 10,
+      "findings_negative": 9,
+      "status": "assigned",
+      "specialist": [
+        "Эндокринолог"
+      ],
+      "urgency": "planned",
+      "primary_finding_id": "thyroid_ait",
+      "primary_finding_synonym": "аит",
+      "primary_organ": "thyroid",
+      "duration_ms": 241.01,
+      "error": ""
+    }
+  ]
+}

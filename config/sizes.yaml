@@ -1,0 +1,933 @@
+# Автоматически сгенерировано parse_tables.py
+# Источник: sizes
+# НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ — правьте исходные таблицы и перезапускайте
+
+organs:
+  Щитовидная железа:
+  - param: Общий объём (женщины)
+    normal: 4–18 см³
+    normal_range:
+    - 4.0
+    - 18.0
+    trigger_text: '> 18 см³'
+    threshold: 18.0
+    unit: см³
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    is_negative: false
+  - param: Общий объём (мужчины)
+    normal: 6–21 см³
+    normal_range:
+    - 6.0
+    - 21.0
+    trigger_text: '> 21 см³'
+    threshold: 21.0
+    unit: см³
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    is_negative: false
+  - param: Общий объём (беременные)
+    normal: 5–20 см³
+    normal_range:
+    - 5.0
+    - 20.0
+    trigger_text: '> 20 см³'
+    threshold: 20.0
+    unit: см³
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    is_negative: false
+  - param: Перешеек
+    normal: до 4–5 мм
+    normal_range:
+    - 4.0
+    - 5.0
+    trigger_text: '> 5 мм'
+    threshold: 5.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    is_negative: false
+  - param: Узел
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любой узел
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    is_negative: false
+  - param: Размер узла
+    normal: —
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 10 мм — показание к биопсии'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    is_negative: false
+  - param: Киста
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любая киста
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    is_negative: false
+  - param: Размер кисты
+    normal: —
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 10 мм — наблюдение'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    is_negative: false
+  - param: TI-RADS
+    normal: 1–2 — норма
+    normal_range:
+    - 1.0
+    - 2.0
+    trigger_text: 3 — эндокринолог, 4–5 — онколог
+    threshold: 3.0
+    unit: ''
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    - онколог
+    is_negative: false
+  - param: Лимфоузлы
+    normal: не увеличены
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 10 мм, изменённая структура'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Эндокринолог
+    - онколог
+    is_negative: false
+  Молочная железа:
+  - param: Железистая ткань (до 35 лет)
+    normal: 11,4 ± 2 мм
+    normal_range:
+    - 11.4
+    - 2.0
+    trigger_text: отклонение
+    threshold: null
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: Железистая ткань (35–44)
+    normal: 10,5 ± 2,5 мм
+    normal_range:
+    - 10.5
+    - 2.5
+    trigger_text: отклонение
+    threshold: null
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: Железистая ткань (45–54)
+    normal: 7,8 ± 1,9 мм
+    normal_range:
+    - 7.8
+    - 1.9
+    trigger_text: отклонение
+    threshold: null
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: Железистая ткань (>55)
+    normal: 6,2 ± 2 мм
+    normal_range:
+    - 6.2
+    - 2.0
+    trigger_text: отклонение
+    threshold: null
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: Млечные протоки
+    normal: до 2 мм
+    normal_range:
+    - 2.0
+    - null
+    trigger_text: '> 2 мм'
+    threshold: 2.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: Киста
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любая киста
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: Размер кисты
+    normal: —
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 10 мм — наблюдение, пункция'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: Узел / фиброаденома
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любой узел
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: Размер узла
+    normal: —
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 10 мм — биопсия'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    is_negative: false
+  - param: BI-RADS
+    normal: 1–2 — норма
+    normal_range:
+    - 1.0
+    - 2.0
+    trigger_text: 3 — маммолог, 4–5 — онколог
+    threshold: 3.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    - онколог
+    is_negative: false
+  - param: Лимфоузлы
+    normal: до 10 мм
+    normal_range:
+    - 10.0
+    - null
+    trigger_text: '> 10 мм, изменённая структура'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Маммолог
+    - онколог
+    is_negative: false
+  Простата:
+  - param: Объём
+    normal: до 25–27 см³
+    normal_range:
+    - 25.0
+    - 27.0
+    trigger_text: '> 30 см³'
+    threshold: 30.0
+    unit: см³
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  - param: Размеры (норма)
+    normal: 40×30×25 мм
+    normal_range:
+    - 40.0
+    - 30.0
+    trigger_text: увеличение
+    threshold: null
+    unit: мм
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  - param: Переходная зона
+    normal: до 20–25 мм
+    normal_range:
+    - 20.0
+    - 25.0
+    trigger_text: увеличение
+    threshold: null
+    unit: мм
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  - param: Аденоматозный узел
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любой узел
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  - param: Размер узла
+    normal: —
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 10 мм — наблюдение'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  - param: Киста
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любая киста
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  - param: Кальцинаты
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любые
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  - param: Остаточная моча
+    normal: до 50 мл
+    normal_range:
+    - 50.0
+    - null
+    trigger_text: '> 50 мл'
+    threshold: 50.0
+    unit: мл
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  - param: Семенные пузырьки
+    normal: до 14 мм
+    normal_range:
+    - 14.0
+    - null
+    trigger_text: '> 14 мм'
+    threshold: 14.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Уролог
+    is_negative: false
+  ОМТ (женщины):
+  - param: М-эхо (1 фаза)
+    normal: 0,3–0,6 см
+    normal_range:
+    - 0.3
+    - 0.6
+    trigger_text: '> 0,6 см'
+    threshold: 0.6
+    unit: см
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  - param: М-эхо (2 фаза)
+    normal: до 1,0 см
+    normal_range:
+    - 1.0
+    - null
+    trigger_text: '> 1,0 см'
+    threshold: 1.0
+    unit: см
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  - param: М-эхо (менопауза)
+    normal: до 0,5 см
+    normal_range:
+    - 0.5
+    - null
+    trigger_text: '> 0,5 см'
+    threshold: 0.5
+    unit: см
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  - param: Яичники
+    normal: до 10 см³
+    normal_range:
+    - 10.0
+    - null
+    trigger_text: '> 10 см³'
+    threshold: 10.0
+    unit: см³
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  - param: Киста яичника
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любая киста
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  - param: Размер кисты яичника
+    normal: —
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 30 мм — наблюдение, > 50 мм — хирург'
+    threshold: 30.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Гинеколог
+    - хирург
+    is_negative: false
+  - param: Миома
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любая миома
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  - param: Размер миомы
+    normal: —
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 30 мм — наблюдение, > 50 мм — хирург'
+    threshold: 30.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Гинеколог
+    - хирург
+    is_negative: false
+  - param: Полип эндометрия
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любой полип
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  - param: Размер полипа
+    normal: —
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 10 мм — гистероскопия'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  - param: O-RADS
+    normal: 1 — норма
+    normal_range:
+    - 1.0
+    - null
+    trigger_text: 2 — гинеколог, 3–5 — онколог
+    threshold: 2.0
+    unit: ''
+    operator: '>'
+    specialist:
+    - Гинеколог
+    - онколог
+    is_negative: false
+  - param: Свободная жидкость
+    normal: до 20 мл
+    normal_range:
+    - 20.0
+    - null
+    trigger_text: '> 20 мл'
+    threshold: 20.0
+    unit: мл
+    operator: '>'
+    specialist:
+    - Гинеколог
+    is_negative: false
+  Артерии ног:
+  - param: Стеноз
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 50% — гемодинамически значимый'
+    threshold: 50.0
+    unit: '%'
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Стеноз 20–30%
+    normal: минимальный
+    normal_range:
+    - null
+    - null
+    trigger_text: наблюдение
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Стеноз 30–45%
+    normal: умеренный
+    normal_range:
+    - null
+    - null
+    trigger_text: консервативная терапия
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Стеноз 45–55%
+    normal: выраженный
+    normal_range:
+    - null
+    - null
+    trigger_text: госпитализация, операция
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Стеноз > 55%
+    normal: критический
+    normal_range:
+    - null
+    - null
+    trigger_text: операция
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Окклюзия
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любая — экстренно
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Vps ОБА
+    normal: 55–103 см/с
+    normal_range:
+    - 55.0
+    - 103.0
+    trigger_text: отклонение
+    threshold: null
+    unit: см/с
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Vps ПБА
+    normal: 51–77 см/с
+    normal_range:
+    - 51.0
+    - 77.0
+    trigger_text: отклонение
+    threshold: null
+    unit: см/с
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Vps ПкА
+    normal: 34–59 см/с
+    normal_range:
+    - 34.0
+    - 59.0
+    trigger_text: отклонение
+    threshold: null
+    unit: см/с
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Vps ЗББА
+    normal: 35–87 см/с
+    normal_range:
+    - 35.0
+    - 87.0
+    trigger_text: отклонение
+    threshold: null
+    unit: см/с
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Vps ПББА
+    normal: 35–87 см/с
+    normal_range:
+    - 35.0
+    - 87.0
+    trigger_text: отклонение
+    threshold: null
+    unit: см/с
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: Vps ТАС
+    normal: 42–83 см/с
+    normal_range:
+    - 42.0
+    - 83.0
+    trigger_text: отклонение
+    threshold: null
+    unit: см/с
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: КИМ
+    normal: до 1,0 мм
+    normal_range:
+    - 1.0
+    - null
+    trigger_text: '> 1,0 мм'
+    threshold: 1.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  - param: АСБ
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любая
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    is_negative: false
+  Вены ног:
+  - param: БПВ
+    normal: до 6 мм
+    normal_range:
+    - 6.0
+    - null
+    trigger_text: '> 6 мм'
+    threshold: 6.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Флеболог
+    is_negative: false
+  - param: МПВ
+    normal: до 5 мм
+    normal_range:
+    - 5.0
+    - null
+    trigger_text: '> 5 мм'
+    threshold: 5.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Флеболог
+    is_negative: false
+  - param: Притоки
+    normal: до 4 мм
+    normal_range:
+    - 4.0
+    - null
+    trigger_text: '> 4 мм'
+    threshold: 4.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Флеболог
+    is_negative: false
+  - param: Перфоранты
+    normal: до 3 мм
+    normal_range:
+    - 3.0
+    - null
+    trigger_text: '> 3 мм'
+    threshold: 3.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Флеболог
+    is_negative: false
+  - param: Рефлюкс
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любой
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Флеболог
+    is_negative: false
+  - param: Тромбоз
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любой — экстренно
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Сосудистый хирург
+    - флеболог
+    is_negative: false
+  - param: Несостоятельность клапанов
+    normal: нет
+    normal_range:
+    - null
+    - null
+    trigger_text: любая
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Флеболог
+    is_negative: false
+  Лимфоузлы:
+  - param: Размер
+    normal: до 10 мм
+    normal_range:
+    - 10.0
+    - null
+    trigger_text: '> 10 мм'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Профильный врач
+    is_negative: false
+  - param: Кортико-медуллярная дифференцировка
+    normal: сохранена
+    normal_range:
+    - null
+    - null
+    trigger_text: нарушена
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Онколог
+    is_negative: false
+  - param: Корковый слой
+    normal: до 3 мм
+    normal_range:
+    - 3.0
+    - null
+    trigger_text: утолщён
+    threshold: null
+    unit: мм
+    operator: '>'
+    specialist:
+    - Онколог
+    is_negative: false
+  - param: Форма
+    normal: овальная
+    normal_range:
+    - null
+    - null
+    trigger_text: округлая
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Онколог
+    is_negative: false
+  - param: Ворота
+    normal: сохранены
+    normal_range:
+    - null
+    - null
+    trigger_text: отсутствуют
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Онколог
+    is_negative: false
+  - param: Кровоток
+    normal: нормальный
+    normal_range:
+    - null
+    - null
+    trigger_text: патологический
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Онколог
+    is_negative: false
+  - param: Структура
+    normal: однородная
+    normal_range:
+    - null
+    - null
+    trigger_text: неоднородная
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Онколог
+    is_negative: false
+  Кисты (общее):
+  - param: Размер
+    normal: зависит от органа
+    normal_range:
+    - null
+    - null
+    trigger_text: '> 10 мм — наблюдение, > 30 мм — вмешательство'
+    threshold: 10.0
+    unit: мм
+    operator: '>'
+    specialist:
+    - Профильный врач
+    is_negative: false
+  - param: Структура
+    normal: анэхогенная, однородная
+    normal_range:
+    - null
+    - null
+    trigger_text: с взвесью, перегородками
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Профильный врач
+    is_negative: false
+  - param: Стенка
+    normal: тонкая, ровная
+    normal_range:
+    - null
+    - null
+    trigger_text: утолщённая, неровная
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Профильный врач
+    is_negative: false
+  - param: Кровоток
+    normal: аваскулярная
+    normal_range:
+    - null
+    - null
+    trigger_text: васкуляризация
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Профильный врач
+    is_negative: false
+  - param: Контуры
+    normal: ровные, чёткие
+    normal_range:
+    - null
+    - null
+    trigger_text: неровные, нечёткие
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Профильный врач
+    is_negative: false
+  - param: Рост
+    normal: стабильный
+    normal_range:
+    - null
+    - null
+    trigger_text: быстрый рост
+    threshold: null
+    unit: ''
+    operator: '>'
+    specialist:
+    - Профильный врач
+    is_negative: false

@@ -1,0 +1,573 @@
+# Автоматически сгенерировано parse_tables.py
+# Источник: mzh
+# НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ — правьте исходные таблицы и перезапускайте
+
+organ_code: mzh
+organ_name: Молочная железа
+keywords:
+- молочная железа
+- молочные железы
+- мж
+- би-rads
+- bi-rads
+- млечные протоки
+- фиброаденома
+findings:
+- id: mzh_fibroadenoma
+  synonyms:
+  - фиброаденома
+  - очаговое образование молочной железы (фиброаденома?)
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Фиброаденома / фиброаденома / очаговое образование молочной железы (фиброаденома?)
+- id: mzh_ochagovoe_obrazovanie_molochnoy_zhelezy
+  synonyms:
+  - очаговое образование молочной железы
+  - объемное образование
+  - узловое образование
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Очаговое образование молочной железы / объемное образование / узловое образование
+- id: mzh_uzlovye_obrazovaniya
+  synonyms:
+  - узловые образования
+  - узлы в молочной железе
+  - объемные образования
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Узловые образования / узлы в молочной железе / объемные образования
+- id: mzh_mastopatiya
+  synonyms:
+  - мастопатия
+  - фиброзно-кистозная мастопатия
+  - фкм
+  - уз-признаки мастопатии
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Мастопатия / фиброзно-кистозная мастопатия / ФКМ / УЗ-признаки мастопатии
+- id: mzh_kistoznaya_mastopatiya
+  synonyms:
+  - кистозная мастопатия
+  - кистозный компонент
+  - мелкокистозный компонент
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Кистозная мастопатия / кистозный компонент / мелкокистозный компонент
+- id: mzh_fokalnye_izmeneniya_molochnyh_zhelez
+  synonyms:
+  - фокальные изменения молочных желез
+  - фокальные изменения
+  - уз-картина фкм
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Фокальные изменения молочных желез / фокальные изменения / УЗ-картина ФКМ
+- id: mzh_diffuznye_izmeneniya_molochnyh_zhelez
+  synonyms:
+  - диффузные изменения молочных желез
+  - диффузные изменения
+  - диффузно уплотнена
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Диффузные изменения молочных желез / диффузные изменения / диффузно уплотнена
+- id: mzh_kista_molochnoy_zhelezy
+  synonyms:
+  - киста молочной железы
+  - кисты
+  - анэхогенное образование
+  - анэхогенные округлые образования
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Киста молочной железы / кисты / анэхогенное образование / анэхогенные округлые образования
+- id: mzh_kista_s_melkodispersnym_soderzhimym
+  synonyms:
+  - киста с мелкодисперсным содержимым
+  - киста с эхогенным содержимым
+  - киста с взвесью
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Киста с мелкодисперсным содержимым / киста с эхогенным содержимым / киста с взвесью
+- id: mzh_zhidkostnye_struktury_v_molochnoy_zhelez
+  synonyms:
+  - жидкостные структуры в молочной железе
+  - жидкостные структуры
+  - анэхогенные структуры
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Жидкостные структуры в молочной железе / жидкостные структуры / анэхогенные структуры
+- id: mzh_kaltsinat_v_protoke
+  synonyms:
+  - кальцинат в протоке
+  - кальцинат
+  - гиперэхогенный кальцинат
+  - кальцинаты
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Кальцинат в протоке / кальцинат / гиперэхогенный кальцинат / кальцинаты
+- id: mzh_rasshirenie_mlechnyh_protokov
+  synonyms:
+  - расширение млечных протоков
+  - расширенные протоки
+  - протоки расширены
+  - гипоэхогенные трубчатые структуры
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Расширение млечных протоков / расширенные протоки / протоки расширены / гипоэхогенные трубчатые структуры
+- id: mzh_vnutriprotokovoe_soderzhimoe
+  synonyms:
+  - внутрипротоковое содержимое
+  - протоки заполнены гипоэхогенным содержимым
+  - неравномерно расширены
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Внутрипротоковое содержимое / протоки заполнены гипоэхогенным содержимым / неравномерно расширены
+- id: mzh_uchastok_lokalnogo_fibroza
+  synonyms:
+  - участок локального фиброза
+  - локальный фиброз
+  - фиброзный участок
+  - участки линейного фиброза
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Участок локального фиброза / локальный фиброз / фиброзный участок / участки линейного фиброза
+- id: mzh_uchastok_neodnorodnoy_struktury
+  synonyms:
+  - участок неоднородной структуры
+  - неоднородный участок
+  - участок с неровными контурами
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Участок неоднородной структуры / неоднородный участок / участок с неровными контурами
+- id: mzh_mastit
+  synonyms:
+  - мастит
+  - нельзя исключить мастит
+  - гиперемированный уплотнённый участок
+  - воспалительный участок
+  specialist:
+  - Маммолог
+  - хирург
+  is_negative: false
+  urgency: planned
+  source: Мастит / нельзя исключить мастит / гиперемированный уплотнённый участок / воспалительный участок
+- id: mzh_giperemiya_molochnoy_zhelezy
+  synonyms:
+  - гиперемия молочной железы
+  - гиперемированный участок
+  - уплотнение
+  specialist:
+  - Маммолог
+  - хирург
+  is_negative: false
+  urgency: planned
+  source: Гиперемия молочной железы / гиперемированный участок / уплотнение
+- id: mzh_implanty_molochnyh_zhelez
+  synonyms:
+  - импланты молочных желез
+  - эндопротез
+  - состояние после маммопластики
+  - маммопластика
+  specialist:
+  - Маммолог
+  - пластический хирург
+  is_negative: false
+  urgency: planned
+  source: Импланты молочных желез / эндопротез / состояние после маммопластики / маммопластика
+- id: mzh_sostoyanie_posle_mastopeksii
+  synonyms:
+  - состояние после мастопексии
+  - мастопексия
+  - после подтяжки
+  specialist:
+  - Маммолог
+  - пластический хирург
+  is_negative: false
+  urgency: planned
+  source: Состояние после мастопексии / мастопексия / после подтяжки
+- id: mzh_sostoyanie_posle_mammoplastiki_br2
+  synonyms:
+  - состояние после маммопластики br2
+  - br2
+  - после увеличения
+  specialist:
+  - Маммолог
+  - пластический хирург
+  is_negative: false
+  urgency: planned
+  source: Состояние после маммопластики Br2 / Br2 / после увеличения
+- id: mzh_kapsula_implanta
+  synonyms:
+  - капсула импланта
+  - стенка эндопротеза
+  - капсула эндопротеза
+  specialist:
+  - Маммолог
+  - пластический хирург
+  is_negative: false
+  urgency: planned
+  source: Капсула импланта / стенка эндопротеза / капсула эндопротеза
+- id: mzh_ochagovye_izmeneniya_ne_vyyavleny
+  synonyms:
+  - очаговые изменения не выявлены
+  - очаговых изменений не выявлено
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Очаговые изменения не выявлены / очаговых изменений не выявлено
+- id: mzh_uz_priznakov_patologii_ne_vyyavleno
+  synonyms:
+  - уз-признаков патологии не выявлено
+  - без патологии
+  - норма
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: УЗ-признаков патологии не выявлено / без патологии / норма
+- id: mzh_uz_priznakov_obemnyh_obrazovaniy_ne_vyya
+  synonyms:
+  - уз-признаков объемных образований не выявлено
+  - объемные образования не выявлены
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: УЗ-признаков объемных образований не выявлено / объемные образования не выявлены
+- id: mzh_bi_rads_1
+  synonyms:
+  - bi-rads 1
+  - категория bi-rads 1
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: BI-RADS 1 / категория BI-RADS 1 / Bi-RADS 1
+- id: mzh_bi_rads_2
+  synonyms:
+  - bi-rads 2
+  - категория bi-rads 2
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: BI-RADS 2 / категория BI-RADS 2 / Bi-RADS 2
+- id: mzh_bi_rads_3
+  synonyms:
+  - bi-rads 3
+  - категория bi-rads 3
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: BI-RADS 3 / категория BI-RADS 3 / Bi-RADS 3
+- id: mzh_bi_rads_4
+  synonyms:
+  - bi-rads 4
+  - категория bi-rads 4
+  specialist:
+  - Маммолог
+  - онколог
+  is_negative: false
+  urgency: planned
+  source: BI-RADS 4 / категория BI-RADS 4 / Bi-RADS 4
+- id: mzh_bi_rads_5
+  synonyms:
+  - bi-rads 5
+  - категория bi-rads 5
+  specialist:
+  - Маммолог
+  - онколог
+  is_negative: false
+  urgency: planned
+  source: BI-RADS 5 / категория BI-RADS 5 / Bi-RADS 5
+- id: mzh_aksillyarnye_limfouzly_ne_uvelicheny
+  synonyms:
+  - аксиллярные лимфоузлы не увеличены
+  - подмышечные л
+  - узлы не увеличены
+  - регионарные лимфоузлы не изменены
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Аксиллярные лимфоузлы не увеличены / подмышечные л/узлы не увеличены / регионарные лимфоузлы не изменены
+- id: mzh_aksillyarnye_limfouzly_uvelicheny
+  synonyms:
+  - аксиллярные лимфоузлы увеличены
+  - подмышечные л
+  - узлы увеличены
+  - лимфоузлы с нарушенной дифференцировкой
+  specialist:
+  - Маммолог
+  - онколог
+  is_negative: false
+  urgency: planned
+  source: Аксиллярные лимфоузлы увеличены / подмышечные л/узлы увеличены / лимфоузлы с нарушенной дифференцировкой
+- id: mzh_limfouzly_s_nechetkoy_kortiko_medullyarn
+  synonyms:
+  - лимфоузлы с нечёткой кортико-медуллярной дифференцировкой
+  - нарушение дифференцировки узлов
+  specialist:
+  - Маммолог
+  - онколог
+  is_negative: false
+  urgency: planned
+  source: Лимфоузлы с нечёткой кортико-медуллярной дифференцировкой / нарушение дифференцировки узлов
+- id: mzh_podklyuchichnye_limfouzly_ne_uvelicheny
+  synonyms:
+  - подключичные лимфоузлы не увеличены
+  - надключичные не увеличены
+  - парастернальные не увеличены
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Подключичные лимфоузлы не увеличены / надключичные не увеличены / парастернальные не увеличены
+- id: mzh_podklyuchichnye_limfouzly_uvelicheny
+  synonyms:
+  - подключичные лимфоузлы увеличены
+  - надключичные увеличены
+  - парастернальные увеличены
+  specialist:
+  - Маммолог
+  - онколог
+  is_negative: false
+  urgency: planned
+  source: Подключичные лимфоузлы увеличены / надключичные увеличены / парастернальные увеличены
+- id: mzh_zhirovaya_involyutsiya
+  synonyms:
+  - жировая инволюция
+  - инволютивные изменения
+  - жировая инволюция молочных желез
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Жировая инволюция / инволютивные изменения / жировая инволюция молочных желез
+- id: mzh_povyshenie_ehogennosti_zhelezistoy_tkani
+  synonyms:
+  - повышение эхогенности железистой ткани
+  - повышенная эхогенность
+  - эхогенность повышена
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Повышение эхогенности железистой ткани / повышенная эхогенность / эхогенность повышена
+- id: mzh_neodnorodnaya_ehostruktura
+  synonyms:
+  - неоднородная эхоструктура
+  - эхоструктура неоднородная
+  - структурно не однородная
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Неоднородная эхоструктура / эхоструктура неоднородная / структурно не однородная
+- id: mzh_diffuzno_uplotnena
+  synonyms:
+  - диффузно уплотнена
+  - диффузное уплотнение
+  - уплотнение железистой ткани
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Диффузно уплотнена / диффузное уплотнение / уплотнение железистой ткани
+- id: mzh_tyazhi
+  synonyms:
+  - тяжи
+  - гиперэхогенные тяжи
+  - фиброзные тяжи
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Тяжи / гиперэхогенные тяжи / фиброзные тяжи
+- id: mzh_svyazki_kupera_utolscheny
+  synonyms:
+  - связки купера утолщены
+  - утолщение связок купера
+  - связки купера изменены
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Связки Купера утолщены / утолщение связок Купера / связки Купера изменены
+- id: mzh_sosudistyy_risunok_ne_usilen
+  synonyms:
+  - сосудистый рисунок не усилен
+  - сосудистый рисунок не изменён
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Сосудистый рисунок не усилен / сосудистый рисунок не изменён
+- id: mzh_sosudistyy_risunok_usilen
+  synonyms:
+  - сосудистый рисунок усилен
+  - усиление васкуляризации
+  - патологический кровоток
+  specialist:
+  - Маммолог
+  - онколог
+  is_negative: false
+  urgency: planned
+  source: Сосудистый рисунок усилен / усиление васкуляризации / патологический кровоток
+- id: mzh_avaskulyarnoe_obrazovanie
+  synonyms:
+  - аваскулярное образование
+  - при цдк аваскулярное
+  - кровоток не определяется
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Аваскулярное образование / при ЦДК аваскулярное / кровоток не определяется
+- id: mzh_vaskulyarizatsiya_v_uzle
+  synonyms:
+  - васкуляризация в узле
+  - кровоток в образовании
+  - активный кровоток
+  specialist:
+  - Маммолог
+  - онколог
+  is_negative: false
+  urgency: planned
+  source: Васкуляризация в узле / кровоток в образовании / активный кровоток
+- id: mzh_kozha_ne_utolschena
+  synonyms:
+  - кожа не утолщена
+  - кожа не изменена
+  - кожные покровы не изменены
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Кожа не утолщена / кожа не изменена / кожные покровы не изменены
+- id: mzh_kozha_utolschena
+  synonyms:
+  - кожа утолщена
+  - утолщение кожи
+  - кожные покровы утолщены
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Кожа утолщена / утолщение кожи / кожные покровы утолщены
+- id: mzh_retromammarnoe_prostranstvo_ne_izmeneno
+  synonyms:
+  - ретромаммарное пространство не изменено
+  - ретромаммарное пространство однородное
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Ретромаммарное пространство не изменено / ретромаммарное пространство однородное
+- id: mzh_premammarnaya_kletchatka_vyrazhena_slabo
+  synonyms:
+  - премаммарная клетчатка выражена слабо
+  - умеренно
+  - премаммарная жировая клетчатка
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Премаммарная клетчатка выражена слабо / умеренно / премаммарная жировая клетчатка
+- id: mzh_intraparenhimatoznaya_zhirovaya_tkan
+  synonyms:
+  - интрапаренхиматозная жировая ткань
+  - интрапаренхиматозно
+  - жировая ткань
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Интрапаренхиматозная жировая ткань / интрапаренхиматозно / жировая ткань
+- id: mzh_fibroglandulyarnyy_tip_stroeniya
+  synonyms:
+  - фиброгландулярный тип строения
+  - фиброгландулярный с кистозным компонентом
+  specialist:
+  - Маммолог
+  is_negative: false
+  urgency: planned
+  source: Фиброгландулярный тип строения / фиброгландулярный с кистозным компонентом
+- id: mzh_smeshannoe_stroenie
+  synonyms:
+  - смешанное строение
+  - смешанный тип
+  - преобладание жирового компонента
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Смешанное строение / смешанный тип / преобладание жирового компонента
+- id: mzh_preobladanie_zhelezistoy_tkani
+  synonyms:
+  - преобладание железистой ткани
+  - железистая ткань выражена
+  - '1:2'
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Преобладание железистой ткани / железистая ткань выражена / 1:2
+- id: mzh_preobladanie_zhirovoy_tkani
+  synonyms:
+  - преобладание жировой ткани
+  - жировой компонент
+  - '2:1'
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Преобладание жировой ткани / жировой компонент / 2:1
+- id: mzh_menopauza
+  synonyms:
+  - менопауза
+  - постменопауза
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Менопауза / постменопауза / менопауза
+- id: mzh_dpm
+  synonyms:
+  - дпм
+  - дата последней менструации
+  - день цикла
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: ДПМ / дата последней менструации / день цикла
+- id: mzh_medikamentoznaya_korrektsiya_otsutstvuet
+  synonyms:
+  - медикаментозная коррекция отсутствует
+  - медикаментозной коррекции нет
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Медикаментозная коррекция отсутствует / медикаментозной коррекции нет
+- id: mzh_differentsiatsiya_tkaney_horoshaya
+  synonyms:
+  - дифференциация тканей хорошая
+  - дифференциация сохранена
+  specialist: []
+  is_negative: true
+  urgency: observation
+  source: Дифференциация тканей хорошая / дифференциация сохранена

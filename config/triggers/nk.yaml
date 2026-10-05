@@ -1,0 +1,1030 @@
+# Автоматически сгенерировано parse_tables.py
+# Источник: nk
+# НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ — правьте исходные таблицы и перезапускайте
+
+organ_code: nk
+organ_name: Нижние конечности (сосуды)
+keywords:
+- артерии нижних конечностей
+- вены нижних конечностей
+- бпв
+- мпв
+- збба
+- пбба
+- оба
+- пба
+- пка
+- тас
+- ким
+- асб
+- стеноз
+- окклюзия
+- рефлюкс
+- тромбоз
+findings:
+- id: nk_ateroskleroz
+  synonyms:
+  - атеросклероз
+  - атеросклероз сосудов нижних конечностей
+  - атеросклероз артерий
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Атеросклероз / атеросклероз сосудов нижних конечностей / атеросклероз артерий
+- id: nk_nestenoziruyuschiy_ateroskleroz
+  synonyms:
+  - нестенозирующий атеросклероз
+  - атеросклероз без стеноза
+  - без значимых бляшек
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Нестенозирующий атеросклероз / атеросклероз без стеноза / без значимых бляшек
+- id: nk_stenoziruyuschiy_ateroskleroz
+  synonyms:
+  - стенозирующий атеросклероз
+  - атеросклероз со стенозами
+  - стенозирующее поражение
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозирующий атеросклероз / атеросклероз со стенозами / стенозирующее поражение
+- id: nk_gemodinamicheski_znachimyy_ateroskleroz
+  synonyms:
+  - гемодинамически значимый атеросклероз
+  - гемодинамически значимое поражение
+  - значимый стеноз
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Гемодинамически значимый атеросклероз / гемодинамически значимое поражение / значимый стеноз
+- id: nk_asb
+  synonyms:
+  - асб
+  - атеросклеротическая бляшка
+  - бляшка
+  - атерома
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: АСБ / атеросклеротическая бляшка / бляшка / атерома
+- id: nk_edinichnye_pristenochnye_kaltsinirovanny
+  synonyms:
+  - единичные пристеночные кальцинированные асб
+  - единичные бляшки
+  - пристеночные бляшки
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Единичные пристеночные кальцинированные АСБ / единичные бляшки / пристеночные бляшки
+- id: nk_kaltsinirovannye_asb
+  synonyms:
+  - кальцинированные асб
+  - бляшки с кальцием
+  - кальцинированные бляшки
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Кальцинированные АСБ / бляшки с кальцием / кальцинированные бляшки
+- id: nk_geterogennye_asb
+  synonyms:
+  - гетерогенные асб
+  - неоднородные бляшки
+  - гетерогенная бляшка
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Гетерогенные АСБ / неоднородные бляшки / гетерогенная бляшка
+- id: nk_geterogennye_asb_s_elementami_kaltsinoza
+  synonyms:
+  - гетерогенные асб с элементами кальциноза
+  - бляшки с кальцинозом
+  - гетерогенные с кальцием
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Гетерогенные АСБ с элементами кальциноза / бляшки с кальцинозом / гетерогенные с кальцием
+- id: nk_geterogennaya_asb_s_kaltsinozom
+  synonyms:
+  - гетерогенная асб с кальцинозом
+  - бляшка с кальцием
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Гетерогенная АСБ с кальцинозом / бляшка с кальцием
+- id: nk_lokalnye_asb
+  synonyms:
+  - локальные асб
+  - местные бляшки
+  - локальная бляшка
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Локальные АСБ / местные бляшки / локальная бляшка
+- id: nk_prolongirovannye_polutsirkulyarnye_asb
+  synonyms:
+  - пролонгированные полуциркулярные асб
+  - протяжённые бляшки
+  - полуциркулярные бляшки
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Пролонгированные полуциркулярные АСБ / протяжённые бляшки / полуциркулярные бляшки
+- id: nk_ploskostnaya_asb
+  synonyms:
+  - плоскостная асб
+  - плоская бляшка
+  - плоскостная бляшка
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Плоскостная АСБ / плоская бляшка / плоскостная бляшка
+- id: nk_mnozhestvennye_asb
+  synonyms:
+  - множественные асб
+  - много бляшек
+  - множественные бляшки
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Множественные АСБ / много бляшек / множественные бляшки
+- id: nk_mnozhestvennye_melkie_asb
+  synonyms:
+  - множественные мелкие асб
+  - мелкие бляшки
+  - множественные мелкие бляшки
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Множественные мелкие АСБ / мелкие бляшки / множественные мелкие бляшки
+- id: nk_asb_sredney_ehogennosti
+  synonyms:
+  - асб средней эхогенности
+  - бляшки средней плотности
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: АСБ средней эхогенности / бляшки средней плотности
+- id: nk_asb_s_pristenochnymi_kaltsinatami
+  synonyms:
+  - асб с пристеночными кальцинатами
+  - бляшки с кальцинатами
+  - пристеночные кальцинаты
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: АСБ с пристеночными кальцинатами / бляшки с кальцинатами / пристеночные кальцинаты
+- id: nk_kaltsinirovannye_vklyucheniya
+  synonyms:
+  - кальцинированные включения
+  - включения кальция
+  - кальцинаты
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Кальцинированные включения / включения кальция / кальцинаты
+- id: nk_lokalnye_giperehogennye_kaltsinirovannye
+  synonyms:
+  - локальные гиперэхогенные кальцинированные включения 1–2 мм
+  - мелкие кальцинаты
+  - гиперэхогенные включения
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Локальные гиперэхогенные кальцинированные включения 1–2 мм / мелкие кальцинаты / гиперэхогенные включения
+- id: nk_giperehogennye_vklyucheniya
+  synonyms:
+  - гиперэхогенные включения
+  - плотные включения
+  - гиперэхогенные структуры
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Гиперэхогенные включения / плотные включения / гиперэхогенные структуры
+- id: nk_kaltsinoz
+  synonyms:
+  - кальциноз
+  - отложение кальция
+  - кальцификация
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Кальциноз / отложение кальция / кальцификация
+- id: nk_vyrazhennyy_kaltsinoz
+  synonyms:
+  - выраженный кальциноз
+  - значительный кальциноз
+  - выраженное отложение кальция
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Выраженный кальциноз / значительный кальциноз / выраженное отложение кальция
+- id: nk_stenki_kaltsinirovany
+  synonyms:
+  - стенки кальцинированы
+  - кальцинированные стенки
+  - кальциноз стенок
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенки кальцинированы / кальцинированные стенки / кальциноз стенок
+- id: nk_stenki_fragmentarno_kaltsinirovany
+  synonyms:
+  - стенки фрагментарно кальцинированы
+  - участки кальциноза
+  - фрагментарный кальциноз
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенки фрагментарно кальцинированы / участки кальциноза / фрагментарный кальциноз
+- id: nk_stenki_utolscheny
+  synonyms:
+  - стенки утолщены
+  - уплотнены
+  - кальцинированы
+  - утолщение
+  - уплотнение
+  - кальциноз стенок
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенки утолщены, уплотнены, кальцинированы / утолщение, уплотнение, кальциноз стенок
+- id: nk_utolschenie_stenok
+  synonyms:
+  - утолщение стенок
+  - утолщённые стенки
+  - диффузное утолщение
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Утолщение стенок / утолщённые стенки / диффузное утолщение
+- id: nk_diffuznoe_utolschenie_stenki
+  synonyms:
+  - диффузное утолщение стенки
+  - распространённое утолщение
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Диффузное утолщение стенки / распространённое утолщение
+- id: nk_uplotnenie_stenki
+  synonyms:
+  - уплотнение стенки
+  - уплотнённая стенка
+  - повышенная плотность
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Уплотнение стенки / уплотнённая стенка / повышенная плотность
+- id: nk_povyshennaya_ehogennost
+  synonyms:
+  - повышенная эхогенность
+  - эхогенные структуры
+  - повышенная плотность
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Повышенная эхогенность / эхогенные структуры / повышенная плотность
+- id: nk_kim_povyshennoy_ehogennosti
+  synonyms:
+  - ким повышенной эхогенности
+  - комплекс интима-медиа изменён
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: КИМ повышенной эхогенности / комплекс интима-медиа изменён
+- id: nk_kim_=_1
+  synonyms:
+  - ким = 1
+  - 2 мм
+  - утолщение ким
+  - ким 1
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: КИМ = 1,2 мм / утолщение КИМ / КИМ 1,2 мм
+- id: nk_kim_=_1_31
+  synonyms:
+  - ким = 1
+  - 1 мм
+  - утолщение ким
+  - ким 1
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: КИМ = 1,1 мм / утолщение КИМ / КИМ 1,1 мм
+- id: nk_struktura_kim_neodnorodnaya
+  synonyms:
+  - структура ким неоднородная
+  - неоднородный ким
+  - изменённая структура
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Структура КИМ неоднородная / неоднородный КИМ / изменённая структура
+- id: nk_nerovnye_kontury
+  synonyms:
+  - неровные контуры
+  - неровный контур
+  - неровность контура
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Неровные контуры / неровный контур / неровность контура
+- id: nk_stenoz
+  synonyms:
+  - стеноз
+  - сужение
+  - стенозирование
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стеноз / сужение / стенозирование
+- id: nk_stenozy_do_20%
+  synonyms:
+  - стенозы до 20%
+  - минимальный стеноз
+  - до 20%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы до 20% / минимальный стеноз / до 20%
+- id: nk_stenozy_do_25–30%
+  synonyms:
+  - стенозы до 25–30%
+  - незначительный стеноз
+  - 25–30%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы до 25–30% / незначительный стеноз / 25–30%
+- id: nk_stenozy_30–35%
+  synonyms:
+  - стенозы 30–35%
+  - умеренный стеноз
+  - 30–35%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы 30–35% / умеренный стеноз / 30–35%
+- id: nk_stenozy_do_35%
+  synonyms:
+  - стенозы до 35%
+  - умеренный стеноз
+  - до 35%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы до 35% / умеренный стеноз / до 35%
+- id: nk_stenoz_35–40%
+  synonyms:
+  - стеноз 35–40%
+  - умеренный стеноз
+  - 35–40%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стеноз 35–40% / умеренный стеноз / 35–40%
+- id: nk_stenozy_do_40%
+  synonyms:
+  - стенозы до 40%
+  - умеренный стеноз
+  - до 40%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы до 40% / умеренный стеноз / до 40%
+- id: nk_stenozy_40–45%
+  synonyms:
+  - стенозы 40–45%
+  - умеренно-выраженный стеноз
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы 40–45% / умеренно-выраженный стеноз
+- id: nk_stenozy_40–50%
+  synonyms:
+  - стенозы 40–50%
+  - умеренно-выраженный стеноз
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы 40–50% / умеренно-выраженный стеноз
+- id: nk_stenozy_do_45%
+  synonyms:
+  - стенозы до 45%
+  - умеренный стеноз
+  - до 45%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы до 45% / умеренный стеноз / до 45%
+- id: nk_stenozy_do_50–55%
+  synonyms:
+  - стенозы до 50–55%
+  - выраженный стеноз
+  - 50–55%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы до 50–55% / выраженный стеноз / 50–55%
+- id: nk_stenoz_50–55%
+  synonyms:
+  - стеноз 50–55%
+  - выраженный стеноз
+  - 50–55%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стеноз 50–55% / выраженный стеноз / 50–55%
+- id: nk_stenozy_do_55%
+  synonyms:
+  - стенозы до 55%
+  - выраженный стеноз
+  - до 55%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозы до 55% / выраженный стеноз / до 55%
+- id: nk_stenoziruyuschie_prosvet_do_55%
+  synonyms:
+  - стенозирующие просвет до 55%
+  - сужение до 55%
+  - стеноз до 55%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозирующие просвет до 55% / сужение до 55% / стеноз до 55%
+- id: nk_stenoziruyuschaya_prosvet_do_50–55%
+  synonyms:
+  - стенозирующая просвет до 50–55%
+  - сужение 50–55%
+  - стеноз 50–55%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозирующая просвет до 50–55% / сужение 50–55% / стеноз 50–55%
+- id: nk_stenoziruyuschie_prosvet_do_45%
+  synonyms:
+  - стенозирующие просвет до 45%
+  - сужение до 45%
+  - стеноз до 45%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозирующие просвет до 45% / сужение до 45% / стеноз до 45%
+- id: nk_stenoziruyuschie_prosvet_do_40%
+  synonyms:
+  - стенозирующие просвет до 40%
+  - сужение до 40%
+  - стеноз до 40%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозирующие просвет до 40% / сужение до 40% / стеноз до 40%
+- id: nk_stenoziruyuschie_prosvet_do_35%
+  synonyms:
+  - стенозирующие просвет до 35%
+  - сужение до 35%
+  - стеноз до 35%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозирующие просвет до 35% / сужение до 35% / стеноз до 35%
+- id: nk_stenoziruyuschie_prosvet_do_20–25%
+  synonyms:
+  - стенозирующие просвет до 20–25%
+  - сужение до 20–25%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозирующие просвет до 20–25% / сужение до 20–25%
+- id: nk_stenoziruyuschie_prosvet_do_20%
+  synonyms:
+  - стенозирующие просвет до 20%
+  - сужение до 20%
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стенозирующие просвет до 20% / сужение до 20%
+- id: nk_lokalno_stenoziruyuschie_prosvet
+  synonyms:
+  - локально стенозирующие просвет
+  - местное сужение
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Локально стенозирующие просвет / местное сужение
+- id: nk_prolongirovannyy_stenoz
+  synonyms:
+  - пролонгированный стеноз
+  - протяжённый стеноз
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Пролонгированный стеноз / протяжённый стеноз
+- id: nk_eshelonirovannye_stenozy
+  synonyms:
+  - эшелонированные стенозы
+  - несколько стенозов подряд
+  - эшелон
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Эшелонированные стенозы / несколько стенозов подряд / эшелон
+- id: nk_stenoz_v_uste
+  synonyms:
+  - стеноз в устье
+  - сужение в устье
+  - стеноз устья
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Стеноз в устье / сужение в устье / стеноз устья
+- id: nk_okklyuziya
+  synonyms:
+  - окклюзия
+  - закупорка
+  - полное закрытие
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Окклюзия / закупорка / полное закрытие
+- id: nk_okklyuziya_levoy_zbba
+  synonyms:
+  - окклюзия левой збба
+  - закупорка левой збба
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Окклюзия левой ЗББА / закупорка левой ЗББА
+- id: nk_okklyuziya_60
+  synonyms:
+  - окклюзия?
+  - подозрение на окклюзию
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Окклюзия? / подозрение на окклюзию
+- id: nk_turbulentnost
+  synonyms:
+  - турбулентность
+  - турбулентный кровоток
+  - элементы турбулентности
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Турбулентность / турбулентный кровоток / элементы турбулентности
+- id: nk_izmenennyy_tip_krovotoka
+  synonyms:
+  - изменённый тип кровотока
+  - изменённый кровоток
+  - нестандартный тип
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Изменённый тип кровотока / изменённый кровоток / нестандартный тип
+- id: nk_magistralnyy_izmenennyy_tip
+  synonyms:
+  - магистральный изменённый тип
+  - изменённый магистральный кровоток
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Магистральный изменённый тип / изменённый магистральный кровоток
+- id: nk_bez_otritsatelnogo_komponenta
+  synonyms:
+  - без отрицательного компонента
+  - утрата фазы
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Без отрицательного компонента / утрата фазы / без отрицательного компонента
+- id: nk_krovotok_bolshe_obychnogo
+  synonyms:
+  - кровоток больше обычного
+  - усиленный кровоток
+  - повышенный
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Кровоток больше обычного / усиленный кровоток / повышенный
+- id: nk_asimmetriya_krovotoka
+  synonyms:
+  - асимметрия кровотока
+  - разница сторон
+  - асимметрия
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Асимметрия кровотока / разница сторон / асимметрия
+- id: nk_d<s
+  synonyms:
+  - d<s
+  - правая меньше левой
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: d<s / правая меньше левой
+- id: nk_arterialnaya_giperemiya
+  synonyms:
+  - артериальная гиперемия
+  - гиперемия
+  - усиление кровотока
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Артериальная гиперемия / гиперемия / усиление кровотока
+- id: nk_krovotok_dostoverno_ne_lotsiruetsya
+  synonyms:
+  - кровоток достоверно не лоцируется
+  - кровоток не определяется
+  - не лоцируется
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Кровоток достоверно не лоцируется / кровоток не определяется / не лоцируется
+- id: nk_krovotok_po_levoy_pbba_dostoverno_ne_lot
+  synonyms:
+  - кровоток по левой пбба достоверно не лоцируется
+  - не определяется
+  - окклюзия?
+  specialist:
+  - Сосудистый хирург
+  is_negative: false
+  urgency: planned
+  source: Кровоток по левой ПББА достоверно не лоцируется / не определяется / окклюзия?
+- id: nk_varikoznaya_transformatsiya
+  synonyms:
+  - варикозная трансформация
+  - варикоз
+  - варикозное расширение
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Варикозная трансформация / варикоз / варикозное расширение
+- id: nk_varikoznaya_transformatsiya_hoda_levoy_b
+  synonyms:
+  - варикозная трансформация хода левой бпв
+  - варикоз левой бпв
+  - трансформация бпв
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Варикозная трансформация хода левой БПВ / варикоз левой БПВ / трансформация БПВ
+- id: nk_varikoznaya_transformatsiya_pritokov_i_s
+  synonyms:
+  - варикозная трансформация притоков и ствола
+  - варикоз притоков
+  - трансформация ствола
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Варикозная трансформация притоков и ствола / варикоз притоков / трансформация ствола
+- id: nk_varikoznaya_deformatsiya_pritokov
+  synonyms:
+  - варикозная деформация притоков
+  - варикоз притоков
+  - деформация
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Варикозная деформация притоков / варикоз притоков / деформация
+- id: nk_varikoznaya_deformatsiya_pritokov_na_gol
+  synonyms:
+  - варикозная деформация притоков на голени
+  - варикоз на голени
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Варикозная деформация притоков на голени / варикоз на голени
+- id: nk_varikoznoe_rasshirenie_ven_nizhnih_konec
+  synonyms:
+  - варикозное расширение вен нижних конечностей
+  - варикоз
+  - варикозная болезнь
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Варикозное расширение вен нижних конечностей / варикоз / варикозная болезнь
+- id: nk_nesostoyatelnost_stvola_bpv_sleva
+  synonyms:
+  - несостоятельность ствола бпв слева
+  - клапанная недостаточность бпв
+  - несостоятельность бпв
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Несостоятельность ствола БПВ слева / клапанная недостаточность БПВ / несостоятельность БПВ
+- id: nk_nesostoyatelnost_pravogo_safeno_podkolen
+  synonyms:
+  - несостоятельность правого сафено-подколенного соустья
+  - несостоятельность спс
+  - клапанная недостаточность спс
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Несостоятельность правого сафено-подколенного соустья / несостоятельность СПС / клапанная недостаточность СПС
+- id: nk_nesostoyatelnost_stvolovyh_klapanov_prav
+  synonyms:
+  - несостоятельность стволовых клапанов правой мпв
+  - клапанная недостаточность мпв
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Несостоятельность стволовых клапанов правой МПВ / клапанная недостаточность МПВ
+- id: nk_nesostoyatelnye_klapany_2_poryadka
+  synonyms:
+  - несостоятельные клапаны 2 порядка
+  - клапанная недостаточность 2 порядка
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Несостоятельные клапаны 2 порядка / клапанная недостаточность 2 порядка
+- id: nk_klapany_2_poryadka_nesostoyatelnye
+  synonyms:
+  - клапаны 2 порядка несостоятельные
+  - несостоятельность клапанов
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Клапаны 2 порядка несостоятельные / несостоятельность клапанов
+- id: nk_safeno_podkolennoe_souste_rasshireno
+  synonyms:
+  - сафено-подколенное соустье расширено
+  - несостоятельно
+  - спс расширено
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Сафено-подколенное соустье расширено, несостоятельно / СПС расширено, несостоятельно
+- id: nk_retrogradnyy_krovotok
+  synonyms:
+  - ретроградный кровоток
+  - обратный ток
+  - ретроградный поток
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Ретроградный кровоток / обратный ток / ретроградный поток
+- id: nk_reflyuks
+  synonyms:
+  - рефлюкс
+  - обратный ток
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Рефлюкс / обратный ток / рефлюкс
+- id: nk_bpv_rasshirena
+  synonyms:
+  - бпв расширена
+  - расширение бпв
+  - дилатация бпв
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: БПВ расширена / расширение БПВ / дилатация БПВ
+- id: nk_bpv_stvol_rasshiren_bolee_6_mm
+  synonyms:
+  - бпв ствол расширен более 6 мм
+  - дилатация бпв > 6 мм
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: БПВ ствол расширен более 6 мм / дилатация БПВ > 6 мм
+- id: nk_varikoznye_pritoki_bolee_4_mm
+  synonyms:
+  - варикозные притоки более 4 мм
+  - дилатация притоков > 4 мм
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Варикозные притоки более 4 мм / дилатация притоков > 4 мм
+- id: nk_mpv_rasshirena
+  synonyms:
+  - мпв расширена
+  - расширение мпв
+  - дилатация мпв
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: МПВ расширена / расширение МПВ / дилатация МПВ
+- id: nk_mpv_v_proksimalnoy_treti_8
+  synonyms:
+  - мпв в проксимальной трети 8
+  - 9 мм
+  - дилатация мпв 8
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: МПВ в проксимальной трети 8,9 мм / дилатация МПВ 8,9 мм
+- id: nk_mpv_v_sredney_treti_4
+  synonyms:
+  - мпв в средней трети 4
+  - 9 мм
+  - дилатация мпв 4
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: МПВ в средней трети 4,9 мм / дилатация МПВ 4,9 мм
+- id: nk_rasshirenie_perforantov
+  synonyms:
+  - расширение перфорантов
+  - расширенные перфоранты
+  - дилатация перфорантов
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Расширение перфорантов / расширенные перфоранты / дилатация перфорантов
+- id: nk_tromboz
+  synonyms:
+  - тромбоз
+  - закупорка вены
+  - тромб
+  specialist:
+  - Сосудистый хирург
+  - флеболог
+  is_negative: false
+  urgency: planned
+  source: Тромбоз / закупорка вены / тромб
+- id: nk_flebotromboz
+  synonyms:
+  - флеботромбоз
+  - тромбоз глубоких вен
+  - тгв
+  specialist:
+  - Сосудистый хирург
+  - флеболог
+  is_negative: false
+  urgency: planned
+  source: Флеботромбоз / тромбоз глубоких вен / ТГВ
+- id: nk_tromboflebit
+  synonyms:
+  - тромбофлебит
+  - воспаление вены с тромбозом
+  specialist:
+  - Сосудистый хирург
+  - флеболог
+  is_negative: false
+  urgency: planned
+  source: Тромбофлебит / воспаление вены с тромбозом
+- id: nk_vospalitelnye_izmeneniya_pzhk
+  synonyms:
+  - воспалительные изменения пжк
+  - воспаление подкожной клетчатки
+  - пжк
+  specialist:
+  - Хирург
+  - флеболог
+  is_negative: false
+  urgency: planned
+  source: Воспалительные изменения ПЖК / воспаление подкожной клетчатки / ПЖК
+- id: nk_vospalitelnye_izmeneniya_pzhk_levoy_stop
+  synonyms:
+  - воспалительные изменения пжк левой стопы
+  - воспаление пжк стопы
+  specialist:
+  - Хирург
+  - флеболог
+  is_negative: false
+  urgency: planned
+  source: Воспалительные изменения ПЖК левой стопы / воспаление ПЖК стопы
+- id: nk_hronicheskoe_zabolevanie_ven_nog_c1s_ep_
+  synonyms:
+  - хроническое заболевание вен ног c1s ep as pr1 lii
+  - c1s ep as pr1 lii
+  - хроническое заболевание вен
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Хроническое заболевание вен ног C1S Ep As Pr1 LII / C1S Ep As Pr1 LII / хроническое заболевание вен
+- id: nk_i839
+  synonyms:
+  - i83.9
+  - мкб-10
+  - варикозное расширение вен
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: I83.9 / МКБ-10 / варикозное расширение вен
+- id: nk_varikoznoe_rasshirenie_ven_nizhnih_konec_99
+  synonyms:
+  - варикозное расширение вен нижних конечностей без язвы или воспаления
+  - варикоз без язвы
+  - i83.9
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Варикозное расширение вен нижних конечностей без язвы или воспаления / варикоз без язвы / I83.9
+- id: nk_vyyavlen_vpervye
+  synonyms:
+  - выявлен впервые
+  - первичное выявление
+  - впервые
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Выявлен впервые / первичное выявление / впервые
+- id: nk_neutochnen
+  synonyms:
+  - неуточнён
+  - неуточнённый диагноз
+  specialist:
+  - Флеболог
+  is_negative: false
+  urgency: planned
+  source: Неуточнён / неуточнённый диагноз
