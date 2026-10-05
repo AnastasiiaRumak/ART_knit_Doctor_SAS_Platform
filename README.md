@@ -159,6 +159,14 @@ sm_clinic_routing/
 ├── requirements.txt              # Зависимости
 └── README.md
 
+
+#### Запуск
+
+source medit_venv/bin/activate
+python3 scripts/serve.py
+
+
+
 🏗️ Архитектура
 
 Протокол УЗИ (текст)
