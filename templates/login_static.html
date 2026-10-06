@@ -5,25 +5,14 @@
 <title>Вход — ArtKnit | СМ-Клиника</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --primary: #2563EB;
-    --primary-hover: #1D4ED8;
-    --primary-light: #EFF6FF;
-    --patient: #059669;
-    --patient-light: #ECFDF5;
-    --text: #111827;
-    --text-muted: #6B7280;
-    --border: #E5E7EB;
-    --bg: #F9FAFB;
-    --error-bg: #FEF2F2;
-    --error-border: #FECACA;
-    --error-text: #991B1B;
-    --success-bg: #ECFDF5;
-    --success-border: #A7F3D0;
-    --success-text: #065F46;
+    --primary: #2563EB; --primary-hover: #1D4ED8; --primary-light: #EFF6FF;
+    --text: #111827; --text-muted: #6B7280;
+    --border: #E5E7EB; --bg: #F9FAFB;
+    --error-bg: #FEF2F2; --error-border: #FECACA; --error-text: #991B1B;
+    --success-bg: #ECFDF5; --success-border: #A7F3D0; --success-text: #065F46;
+    --info-bg: #EFF6FF; --info-border: #BFDBFE; --info-text: #1E40AF;
   }
-
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                  "Helvetica Neue", Arial, sans-serif;
@@ -32,9 +21,7 @@
     justify-content: center; padding: 20px;
     color: var(--text); line-height: 1.5;
   }
-
   .login-wrap { width: 100%; max-width: 560px; }
-
   .brand { text-align: center; margin-bottom: 22px; }
   .brand-logo {
     display: inline-flex; align-items: center; justify-content: center;
@@ -45,7 +32,6 @@
   }
   .brand-title { font-size: 22px; font-weight: 700; }
   .brand-subtitle { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
-
   .card {
     background: white; border-radius: 14px; padding: 28px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04);
@@ -53,8 +39,6 @@
   }
   .card h2 { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
   .card .hint { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
-
-  /* --- 4 карточки кабинетов --- */
   .cabinets {
     display: grid; grid-template-columns: repeat(4, 1fr);
     gap: 8px; margin-bottom: 22px;
@@ -62,30 +46,18 @@
   .cabinet {
     padding: 12px 6px; border: 1px solid var(--border);
     border-radius: 10px; text-align: center; cursor: pointer;
-    background: white; transition: all 0.15s;
-    font-family: inherit;
+    background: white; transition: all 0.15s; font-family: inherit;
   }
   .cabinet:hover {
-    border-color: var(--primary);
-    background: var(--primary-light);
+    border-color: var(--primary); background: var(--primary-light);
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
   }
   .cabinet.active { background: var(--primary); color: white; border-color: var(--primary); }
   .cabinet.active .cabinet-desc { color: rgba(255,255,255,0.85); }
-  .cabinet[data-role="patient"]:hover {
-    border-color: var(--patient);
-    background: var(--patient-light);
-    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.1);
-  }
-  .cabinet[data-role="patient"].active {
-    background: var(--patient); border-color: var(--patient);
-  }
   .cabinet-icon { font-size: 20px; margin-bottom: 4px; display: block; }
   .cabinet-title { font-size: 12px; font-weight: 600; }
   .cabinet-desc { font-size: 10px; color: var(--text-muted); margin-top: 2px; line-height: 1.3; }
-
-  /* --- Разделитель --- */
   .divider {
     display: flex; align-items: center; gap: 10px;
     margin: 4px 0 16px; color: var(--text-muted); font-size: 12px;
@@ -93,8 +65,6 @@
   .divider::before, .divider::after {
     content: ""; flex: 1; height: 1px; background: var(--border);
   }
-
-  /* --- Поля --- */
   .field { margin-bottom: 12px; }
   .field label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; }
   .input-wrap { position: relative; }
@@ -114,20 +84,15 @@
     color: var(--text-muted); border-radius: 6px;
   }
   .toggle-eye:hover { background: var(--bg); }
-
-  /* --- Кнопка --- */
   .btn-primary {
     width: 100%; padding: 12px; font-size: 15px; font-weight: 600;
     font-family: inherit; color: white; background: var(--primary);
     border: none; border-radius: 8px; cursor: pointer;
-    transition: background 0.15s, transform 0.05s;
-    margin-top: 6px;
+    transition: background 0.15s, transform 0.05s; margin-top: 6px;
   }
   .btn-primary:hover:not(:disabled) { background: var(--primary-hover); }
   .btn-primary:active:not(:disabled) { transform: translateY(1px); }
   .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
-
-  /* --- Сообщения --- */
   .alert {
     padding: 10px 14px; border-radius: 8px; font-size: 13px;
     margin-bottom: 14px; display: none; border: 1px solid;
@@ -135,8 +100,7 @@
   .alert.show { display: block; }
   .alert.error { background: var(--error-bg); border-color: var(--error-border); color: var(--error-text); }
   .alert.success { background: var(--success-bg); border-color: var(--success-border); color: var(--success-text); }
-
-  /* --- Демо-подсказка --- */
+  .alert.info { background: var(--info-bg); border-color: var(--info-border); color: var(--info-text); }
   .demo-hint {
     margin-top: 18px; padding: 12px 14px;
     background: #FFFBEB; border: 1px solid #FDE68A;
@@ -150,13 +114,9 @@
     font-size: 11px;
   }
   .demo-hint .row { display: flex; justify-content: space-between; gap: 8px; }
-
-  /* --- Подвал --- */
   .footer { text-align: center; font-size: 12px; color: var(--text-muted); margin-top: 18px; }
   .footer a { color: var(--primary); text-decoration: none; }
   .footer a:hover { text-decoration: underline; }
-
-  /* --- Альтернативные действия --- */
   .alt-action {
     text-align: center; margin-top: 16px;
     padding-top: 14px; border-top: 1px dashed var(--border);
@@ -164,7 +124,6 @@
   }
   .alt-action a { color: var(--primary); text-decoration: none; font-weight: 500; }
   .alt-action a:hover { text-decoration: underline; }
-
   .spinner {
     display: inline-block; width: 14px; height: 14px;
     border: 2px solid rgba(255,255,255,0.4);
@@ -173,7 +132,6 @@
     vertical-align: -2px; margin-right: 6px;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
-
   @media (max-width: 520px) {
     .card { padding: 20px; }
     .cabinets { grid-template-columns: repeat(2, 1fr); }
@@ -196,7 +154,6 @@
 
     <div id="alert" class="alert"></div>
 
-    <!-- 4 карточки: Врач · Пациент · Руководитель · Администратор -->
     <div class="cabinets">
       <button type="button" class="cabinet" data-role="doctor"
               onclick="pickCabinet('doctor')">
@@ -226,9 +183,7 @@
 
     <div class="divider">или введите логин и пароль</div>
 
-    <!-- Форма -->
     <form id="loginForm" onsubmit="return handleLogin(event)" autocomplete="off">
-
       <div class="field">
         <label for="username">Логин</label>
         <input type="text" id="username" name="username"
@@ -249,15 +204,13 @@
       <button type="submit" class="btn-primary" id="submitBtn">Войти</button>
     </form>
 
-    <!-- Ссылка на публичную загрузку -->
     <div class="alt-action">
       Нет учётной записи?
       <a href="/upload">Загрузить протокол без входа →</a>
     </div>
 
-    <!-- Демо-подсказка -->
     <div class="demo-hint">
-      <strong>🔑 Демо-доступы</strong>
+      <strong>🔑 Демо-доступы (вводите вручную)</strong>
       <div class="row"><span>👨‍⚕️ Врач:</span> <code>doctor / doctor123</code></div>
       <div class="row"><span>🧑 Пациент:</span> <code>patient / patient123</code></div>
       <div class="row"><span>📊 Руководитель:</span> <code>manager / manager123</code></div>
@@ -273,20 +226,14 @@
 </div>
 
 <script>
-// =====================================================================
-//  ?next= от сервера
-// =====================================================================
 // __NEXT_URL_PLACEHOLDER__
 window.NEXT_URL = window.NEXT_URL || null;
 
-// =====================================================================
-//  Демо-логины (для автозаполнения при клике на карточку)
-// =====================================================================
-const DEMO_CREDENTIALS = {
-  doctor:  { username: "doctor",  password: "doctor123" },
-  patient: { username: "patient", password: "patient123" },
-  manager: { username: "manager", password: "manager123" },
-  admin:   { username: "admin",   password: "admin123" },
+const ROLE_NAMES = {
+  doctor:  "Врач",
+  patient: "Пациент",
+  manager: "Руководитель",
+  admin:   "Администратор",
 };
 
 const ROLE_REDIRECT = {
@@ -296,36 +243,23 @@ const ROLE_REDIRECT = {
   admin:   "/admin",
 };
 
-// =====================================================================
-//  Клик по карточке роли → автозаполнение → автологин
-// =====================================================================
+// Клик по карточке — только подсветка + фокус, БЕЗ автозаполнения
 function pickCabinet(role) {
-  // Только визуальная подсветка — без автозаполнения и автологина
   document.querySelectorAll(".cabinet").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.role === role);
   });
-
-  // Подсказка — куда вводить
   showAlert(
     `Введите логин и пароль для роли «${ROLE_NAMES[role] || role}» — см. подсказку ниже`,
     "info"
   );
-
-  // Фокус на поле логина
   document.getElementById("username").focus();
 }
 
-// =====================================================================
-//  Показать/скрыть пароль
-// =====================================================================
 function togglePassword() {
   const input = document.getElementById("password");
   input.type = input.type === "password" ? "text" : "password";
 }
 
-// =====================================================================
-//  Сообщения
-// =====================================================================
 function showAlert(message, type = "error") {
   const el = document.getElementById("alert");
   el.className = `alert show ${type}`;
@@ -336,9 +270,6 @@ function hideAlert() {
   el.className = "alert"; el.textContent = "";
 }
 
-// =====================================================================
-//  Отправка формы
-// =====================================================================
 async function handleLogin(event) {
   event.preventDefault();
   const username = document.getElementById("username").value.trim();
@@ -353,7 +284,6 @@ async function handleLogin(event) {
 
 async function submitLogin(username, password) {
   hideAlert();
-
   const btn = document.getElementById("submitBtn");
   const original = btn.textContent;
   btn.disabled = true;
@@ -366,15 +296,12 @@ async function submitLogin(username, password) {
       body: JSON.stringify({ username, password }),
       credentials: "same-origin",
     });
-
     const data = await resp.json();
     if (!resp.ok) throw new Error(data.detail || "Неверный логин или пароль");
 
     showAlert(`Добро пожаловать, ${data.name || data.role}!`, "success");
-
     const target = window.NEXT_URL || ROLE_REDIRECT[data.role] || "/upload";
     setTimeout(() => { window.location.href = target; }, 400);
-
   } catch (err) {
     showAlert(err.message || "Ошибка соединения");
     btn.disabled = false;
@@ -382,14 +309,14 @@ async function submitLogin(username, password) {
   }
 }
 
-// =====================================================================
-//  Автозаполнение из URL: ?u=doctor&p=doctor123
-// =====================================================================
+// Только подстановка логина из URL — пароль всегда руками
 window.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(location.search);
-  const u = params.get("u"); const p = params.get("p");
-  if (u) document.getElementById("username").value = u;
-  if (p) document.getElementById("password").value = p;
+  const u = params.get("u");
+  if (u) {
+    document.getElementById("username").value = u;
+    document.getElementById("password").focus();
+  }
 });
 </script>
 

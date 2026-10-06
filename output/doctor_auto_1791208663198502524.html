@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>ArtKnit — Кардиоцентр | Экран врача</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #F6F8F7;
+    color: #1F2937;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .app { display: flex; min-height: 100vh; }
+
+  /* ---------- САЙДБАР ---------- */
+  .sidebar {
+    width: 240px; background: #FFFFFF;
+    border-right: 1px solid #E5E7EB;
+    padding: 20px 16px;
+    display: flex; flex-direction: column; gap: 24px;
+    position: sticky; top: 0; height: 100vh;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon {
+    width: 40px; height: 40px; background: #13AB7B;
+    border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 20px;
+  }
+  .logo-text h1 { font-size: 16px; font-weight: 700; }
+  .logo-text p { font-size: 12px; color: #6B7280; }
+  .section-title {
+    font-size: 11px; font-weight: 600; color: #9CA3AF;
+    text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;
+  }
+  .nav { display: flex; flex-direction: column; gap: 2px; }
+  .nav-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 12px; border-radius: 8px;
+    color: #374151; font-size: 14px; cursor: pointer;
+    transition: background .15s;
+  }
+  .nav-item:hover { background: #F3F4F6; }
+  .nav-item.active { background: #E8F5EE; color: #13AB7B; font-weight: 600; }
+  .nav-item .ico { width: 18px; text-align: center; }
+
+  .main { flex: 1; padding: 20px 28px 40px; }
+
+  .topbar { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+  .search {
+    flex: 1; max-width: 420px;
+    display: flex; align-items: center; gap: 8px;
+    background: #FFFFFF; border: 1px solid #E5E7EB;
+    border-radius: 12px; padding: 10px 14px; color: #9CA3AF;
+  }
+  .search input {
+    border: none; outline: none; background: transparent;
+    width: 100%; font-size: 14px; color: #1F2937;
+  }
+  .topbar-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .icon-btn {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: #FFFFFF; border: 1px solid #E5E7EB;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; position: relative;
+  }
+  .icon-btn .dot {
+    position: absolute; top: 8px; right: 8px;
+    width: 8px; height: 8px; background: #FE8B4B; border-radius: 50%;
+  }
+  .user {
+    display: flex; align-items: center; gap: 8px;
+    background: #FFFFFF; border: 1px solid #E5E7EB;
+    border-radius: 20px; padding: 6px 14px 6px 6px; cursor: pointer;
+  }
+  .avatar {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: #13AB7B; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 600; font-size: 13px;
+  }
+  .btn-primary {
+    background: #13AB7B; color: #fff; border: none;
+    border-radius: 20px; padding: 10px 20px;
+    font-size: 14px; font-weight: 600; cursor: pointer;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .btn-primary:hover { background: #0F9668; }
+
+  /* ---------- БАННЕР МАРШРУТА ---------- */
+  .route-banner {
+    background: #FEF3C7; border: 1px solid #FCD34D;
+    border-left: 5px solid #F59E0B;
+    border-radius: 14px; padding: 16px 20px;
+    margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .route-banner-head {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 700; color: #78350F; font-size: 14px;
+  }
+  .route-banner-body {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 6px 30px; font-size: 13px; color: #78350F;
+  }
+  .route-banner-body b { color: #451A03; }
+  .route-banner-actions { display: flex; gap: 10px; margin-top: 6px; }
+  .btn-outline {
+    background: #FFFFFF; border: 1px solid #FCD34D;
+    color: #78350F; border-radius: 10px;
+    padding: 8px 16px; font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .btn-outline:hover { background: #FDE68A; }
+
+  .grid { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
+
+  .card {
+    background: #FFFFFF; border: 1px solid #E5E7EB;
+    border-radius: 16px; padding: 20px; margin-bottom: 20px;
+  }
+  .patient-head { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  .patient-avatar {
+    width: 56px; height: 56px; border-radius: 50%;
+    background: #13AB7B; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 600;
+  }
+  .patient-info h2 { font-size: 18px; font-weight: 700; }
+  .patient-info p { font-size: 13px; color: #6B7280; }
+  .patient-meta {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; font-size: 13px; color: #374151;
+  }
+  .patient-meta div span { color: #9CA3AF; display: block; font-size: 11px; }
+
+  /* ---------- ГЛАВНАЯ НАХОДКА ---------- */
+  .primary-finding {
+    background: linear-gradient(135deg, #E8F5EE 0%, #F3FBF6 100%);
+    border: 1px solid #B8E6CF;
+    border-radius: 14px; padding: 18px 20px; margin-bottom: 16px;
+  }
+  .primary-finding .label {
+    font-size: 11px; font-weight: 700; color: #0F7A54;
+    text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;
+  }
+  .primary-finding .title {
+    font-size: 17px; font-weight: 700; color: #1F2937; margin-bottom: 10px;
+  }
+  .primary-finding .meta {
+    display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 4px 12px; border-radius: 999px;
+    font-size: 12px; font-weight: 700;
+  }
+  .badge.urgency-emergency { background: #FDECEA; color: #E53935; }
+  .badge.urgency-oncological { background: #FFF4E6; color: #D97706; }
+  .badge.urgency-urgent { background: #FEF3C7; color: #B45309; }
+  .badge.urgency-planned { background: #E8F5EE; color: #0F7A54; }
+  .badge.urgency-observation { background: #F3F4F6; color: #6B7280; }
+  .badge.spec { background: #EAF1FE; color: #2563EB; }
+
+  .primary-finding .quote {
+    font-size: 13px; color: #374151; font-style: italic;
+    background: #FFFFFF; border-left: 3px solid #13AB7B;
+    padding: 10px 14px; border-radius: 8px;
+  }
+
+  /* ---------- ALL FINDINGS (collapsible) ---------- */
+  .all-findings-toggle {
+    background: #FFFFFF; border: 1px solid #E5E7EB;
+    border-radius: 12px; padding: 12px 16px;
+    display: flex; align-items: center; justify-content: space-between;
+    cursor: pointer; margin-bottom: 12px;
+    font-size: 13px; font-weight: 600; color: #374151;
+  }
+  .all-findings-toggle:hover { background: #F9FAFB; }
+  .all-findings-toggle .count {
+    background: #E8F5EE; color: #13AB7B;
+    border-radius: 999px; padding: 2px 10px; font-size: 11px;
+  }
+  .all-findings-list { display: none; }
+  .all-findings-list.open { display: block; }
+  .finding-item {
+    background: #FAFBFC; border: 1px solid #E5E7EB;
+    border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;
+    font-size: 13px;
+  }
+  .finding-item .f-title {
+    font-weight: 700; color: #1F2937; margin-bottom: 4px;
+  }
+  .finding-item .f-meta {
+    font-size: 12px; color: #6B7280; margin-bottom: 4px;
+  }
+  .finding-item .f-quote {
+    font-size: 12px; color: #7A5A00;
+    font-style: italic;
+    background: #FFF8E6; border-left: 2px solid #F5B400;
+    padding: 6px 10px; border-radius: 6px; margin-top: 6px;
+  }
+
+  /* ---------- ФОРМА ---------- */
+  .form-section h3 {
+    font-size: 15px; font-weight: 700; margin-bottom: 4px;
+  }
+  .form-hint { font-size: 12px; color: #9CA3AF; margin-bottom: 14px; }
+  .tactics { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .tactic {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px; border: 1px solid #E5E7EB;
+    border-radius: 10px; cursor: pointer;
+    transition: all .15s;
+  }
+  .tactic:hover { border-color: #13AB7B; background: #F3FBF6; }
+  .tactic input { accent-color: #13AB7B; width: 18px; height: 18px; }
+  .tactic label { cursor: pointer; font-size: 14px; color: #1F2937; }
+  .comment {
+    width: 100%; border: 1px solid #E5E7EB; border-radius: 10px;
+    padding: 12px 14px; font-size: 13px; font-family: inherit;
+    resize: vertical; min-height: 70px; outline: none;
+    margin-bottom: 16px;
+  }
+  .comment:focus { border-color: #13AB7B; }
+  .form-actions { display: flex; gap: 10px; }
+  .btn-ghost {
+    background: #F3F4F6; color: #374151; border: none;
+    border-radius: 20px; padding: 10px 22px;
+    font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+
+  /* ---------- ПРАВАЯ КОЛОНКА ---------- */
+  .stat-card {
+    background: #FFFFFF; border: 1px solid #E5E7EB;
+    border-radius: 16px; padding: 18px; margin-bottom: 16px;
+  }
+  .stat-card h4 {
+    font-size: 14px; font-weight: 700; margin-bottom: 12px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .stat-card h4 span { font-size: 11px; color: #9CA3AF; font-weight: 500; }
+
+  .explain-list { display: flex; flex-direction: column; gap: 10px; }
+  .explain-row {
+    font-size: 12.5px; color: #374151;
+    padding: 10px 12px; background: #FAFBFC;
+    border-radius: 10px; border-left: 3px solid #13AB7B;
+  }
+  .explain-row .k {
+    font-size: 10.5px; color: #9CA3AF;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    font-weight: 700; margin-bottom: 3px;
+  }
+  .explain-row .v { color: #1F2937; font-weight: 500; }
+
+  /* Alerts */
+  .alert-box {
+    border-radius: 12px; padding: 14px 16px; margin-bottom: 14px;
+    font-size: 13px; line-height: 1.5;
+  }
+  .alert-box.alert-soft {
+    background: #EAF1FE; border: 1px solid #B8CCFA; color: #1E3A8A;
+  }
+  .alert-box.alert-emergency {
+    background: #FDECEA; border: 1px solid #F5A6A0; color: #991B1B;
+  }
+  .alert-box.alert-onco {
+    background: #FFF4E6; border: 1px solid #F5D97A; color: #7A5A00;
+  }
+  .alert-box .a-title {
+    font-weight: 700; margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ---------- САЙДБАР ---------- -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">♥</div>
+      <div class="logo-text">
+        <h1>ArtKnit</h1>
+        <p>Кардиоцентр</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Рабочее пространство</div>
+      <nav class="nav">
+        <div class="nav-item active"><span class="ico">🏠</span> Главная</div>
+        <div class="nav-item"><span class="ico">👥</span> Пациенты</div>
+        <div class="nav-item"><span class="ico">📋</span> Записи</div>
+        <div class="nav-item"><span class="ico">📊</span> Аналитика</div>
+        <div class="nav-item"><span class="ico">📅</span> Календарь</div>
+      </nav>
+    </div>
+
+    <div>
+      <div class="section-title">Управление</div>
+      <nav class="nav">
+        <div class="nav-item"><span class="ico">🔔</span> Уведомления</div>
+        <div class="nav-item"><span class="ico">✅</span> Задачи</div>
+        <div class="nav-item"><span class="ico">💳</span> Финансы</div>
+        <div class="nav-item"><span class="ico">👤</span> Персонал</div>
+        <div class="nav-item"><span class="ico">⚙️</span> Настройки</div>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- ---------- ОСНОВНАЯ ОБЛАСТЬ ---------- -->
+  <main class="main">
+
+    <!-- Верхняя панель -->
+    <div class="topbar">
+      <div class="search">
+        🔍 <input placeholder="Поиск пациента по имени...">
+      </div>
+      <div class="topbar-right">
+        <div class="icon-btn">🔔<span class="dot"></span></div>
+        <div class="user">
+          <div class="avatar">—</div>
+          <span>— ▾</span>
+        </div>
+        <button class="btn-primary">+ Новая запись</button>
+      </div>
+    </div>
+
+    <!-- ================= МАРШРУТ ЕСТЬ ================= -->
+
+    <!-- Жёлтый баннер маршрута -->
+    <div class="route-banner">
+      <div class="route-banner-head">
+        ⚠️ Пациент включён в диагностический маршрут
+          · <span style="color: #7A5A00;">неопознанная находка</span>
+      </div>
+      <div class="route-banner-body">
+        <div><b>Основание:</b> УЗИ ОМТ от 4044-04-04</div>
+        <div><b>Рекомендация УЗИ:</b> консультация гинеколог</div>
+        <div><b>Находка:</b> параовариальная киста</div>
+        <div><b>Статус:</b> ⚠️ Требует подтверждения врача</div>
+      </div>
+      <div class="route-banner-actions">
+        <button class="btn-outline">Открыть протокол УЗИ</button>
+        <button class="btn-outline">История маршрута</button>
+      </div>
+    </div>
+
+    <!-- Алерт по сценарию -->
+
+    <div class="grid">
+
+      <!-- ЛЕВАЯ КОЛОНКА -->
+      <div>
+
+        <!-- Карточка пациента -->
+        <div class="card">
+          <div class="patient-head">
+            <div class="patient-avatar">II</div>
+            <div class="patient-info">
+              <h2>iren in</h2>
+              <p>89 лет · — · амбулаторная карта № auto_1791208663198502524</p>
+            </div>
+          </div>
+          <div class="patient-meta">
+            <div><span>Дата приёма</span>4044-04-04</div>
+            <div><span>Время</span>—</div>
+            <div><span>Врач</span>—</div>
+          </div>
+        </div>
+
+        <!-- ГЛАВНАЯ НАХОДКА -->
+        <div class="primary-finding">
+          <div class="label">Приоритетная находка</div>
+          <div class="title">✅ параовариальная киста</div>
+
+          <div class="meta">
+              <span class="badge spec">👨‍⚕️ Гинеколог</span>
+            <span class="badge urgency-planned">
+              📅 Планово
+            </span>
+          </div>
+
+          <div class="quote">«…Е: УЗ-признаки параовариальной кисты справа.;»</div>
+        </div>
+
+        <!-- Все находки (collapsible) -->
+        <div class="all-findings-toggle" onclick="document.getElementById('allFindings').classList.toggle('open')">
+          <span>Все находки по протоколу</span>
+          <span class="count">6</span>
+        </div>
+        <div class="all-findings-list" id="allFindings">
+            <div class="finding-item">
+              <div class="f-title">параовариальная киста</div>
+              <div class="f-meta">
+                Специалист: Гинеколог
+                · urgency: planned
+                · уверенность: 0.95
+              </div>
+              <div class="f-quote">«…Е: УЗ-признаки параовариальной кисты справа.;»</div>
+            </div>
+            <div class="finding-item">
+              <div class="f-title">параовариальная киста справа</div>
+              <div class="f-meta">
+                Специалист: Гинеколог
+                · urgency: planned
+                · уверенность: 0.95
+              </div>
+              <div class="f-quote">«…Е: УЗ-признаки параовариальной кисты справа.;»</div>
+            </div>
+            <div class="finding-item">
+              <div class="f-title">параовариальная киста</div>
+              <div class="f-meta">
+                Специалист: Гинеколог
+                · urgency: planned
+                · уверенность: 0.95
+              </div>
+              <div class="f-quote">«…Е: УЗ-признаки параовариальной кисты справа.»</div>
+            </div>
+            <div class="finding-item">
+              <div class="f-title">параовариальная киста справа</div>
+              <div class="f-meta">
+                Специалист: Гинеколог
+                · urgency: planned
+                · уверенность: 0.95
+              </div>
+              <div class="f-quote">«…Е: УЗ-признаки параовариальной кисты справа.»</div>
+            </div>
+            <div class="finding-item">
+              <div class="f-title">желтое тело</div>
+              <div class="f-meta">
+                Специалист: Гинеколог
+                · urgency: planned
+                · уверенность: 0.95
+              </div>
+              <div class="f-quote">«…ликулов до5 мм,желтое тело 19х19мм;»</div>
+            </div>
+            <div class="finding-item">
+              <div class="f-title">желтое тело</div>
+              <div class="f-meta">
+                Специалист: Гинеколог
+                · urgency: planned
+                · уверенность: 0.95
+              </div>
+              <div class="f-quote">«…ликулов до5 мм,желтое тело 19х19мм;»</div>
+            </div>
+        </div>
+
+        <!-- Форма завершения приёма -->
+        <div class="card form-section">
+          <h3>Завершение приёма</h3>
+          <div class="form-hint">Требуется определить дальнейшую тактику</div>
+
+          <div class="tactics">
+            <label class="tactic"><input type="radio" name="tactic"><label>Оперативное лечение показано</label></label>
+            <label class="tactic"><input type="radio" name="tactic"><label>Требуется дополнительное обследование</label></label>
+            <label class="tactic"><input type="radio" name="tactic"><label>Динамическое наблюдение</label></label>
+            <label class="tactic"><input type="radio" name="tactic"><label>Операция не показана</label></label>
+            <label class="tactic"><input type="radio" name="tactic"><label>Пациент отказался</label></label>
+            <label class="tactic"><input type="radio" name="tactic"><label>Направление в другой профиль</label></label>
+          </div>
+
+          <textarea class="comment" placeholder="Комментарий врача..."></textarea>
+
+          <div class="form-actions">
+            <button class="btn-primary">Завершить приём</button>
+            <button class="btn-ghost">Отмена</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ПРАВАЯ КОЛОНКА: ОБЪЯСНИМОСТЬ -->
+      <div>
+
+        <div class="stat-card">
+          <h4>Почему такой маршрут? <span>объяснимость</span></h4>
+          <div class="explain-list">
+            <div class="explain-row">
+              <div class="k">Триггер</div>
+              <div class="v">параовариальная киста</div>
+            </div>
+            <div class="explain-row">
+              <div class="k">Специалист</div>
+              <div class="v">Гинеколог</div>
+            </div>
+            <div class="explain-row">
+              <div class="k">Срочность</div>
+              <div class="v">📅 Планово · до 3 дн.</div>
+            </div>
+            <div class="explain-row">
+              <div class="k">Сценарий</div>
+              <div class="v">стандартный</div>
+            </div>
+            <div class="explain-row">
+              <div class="k">Спорная ситуация</div>
+              <div class="v">неопознанная находка</div>
+            </div>
+            <div class="explain-row">
+              <div class="k">Причина</div>
+              <div class="v">параовариальная киста — консультация гинеколог | В протоколе есть находка без чёткого правила — требуется подтверждение врача</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <h4>Цитата из протокола <span>источник триггера</span></h4>
+          <div class="explain-row" style="border-left-color: #F5B400; background: #FFF8E6;">
+            <div class="v" style="font-style: italic;">«…Е: УЗ-признаки параовариальной кисты справа.;»</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <h4>Метаданные обработки</h4>
+          <div class="explain-list">
+            <div class="explain-row">
+              <div class="k">Найдено предложений</div>
+              <div class="v">1870</div>
+            </div>
+            <div class="explain-row">
+              <div class="k">Позитивных находок</div>
+              <div class="v">6</div>
+            </div>
+            <div class="explain-row">
+              <div class="k">Отрицательных (отсечены)</div>
+              <div class="v">0</div>
+            </div>
+            <div class="explain-row">
+              <div class="k">Органы в протоколе</div>
+              <div class="v">omt</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+  // Обработка клика по тактике
+  document.querySelectorAll('.tactic').forEach(function(el) {
+    el.addEventListener('click', function() {
+      document.querySelectorAll('.tactic').forEach(function(t) {
+        t.style.borderColor = '#E5E7EB';
+        t.style.background = '#FFFFFF';
+      });
+      el.style.borderColor = '#13AB7B';
+      el.style.background = '#F3FBF6';
+      var input = el.querySelector('input');
+      if (input) input.checked = true;
+    });
+  });
+
+  // Кнопка "Завершить приём"
+  var finishBtn = document.querySelector('.form-actions .btn-primary');
+  if (finishBtn) {
+    finishBtn.addEventListener('click', function() {
+      var checked = document.querySelector('input[name="tactic"]:checked');
+      if (!checked) {
+        alert('Пожалуйста, выберите тактику для завершения приёма');
+        return;
+      }
+      var tacticEl = checked.closest('.tactic');
+      var tacticLabel = tacticEl ? tacticEl.querySelector('label').textContent.trim() : '—';
+      var patientName = document.querySelector('.patient-info h2');
+      patientName = patientName ? patientName.textContent.trim() : '—';
+      var findingEl = document.querySelector('.primary-finding .title');
+      var findingText = findingEl ? findingEl.textContent.trim() : '—';
+
+      alert('Приём завершён\n\nПациент: ' + patientName + '\nНаходка: ' + findingText + '\nТактика: ' + tacticLabel + '\n\nВ реальной МИС маршрут пациента обновлён.');
+    });
+  }
+
+  // Кнопка "Отмена"
+  var cancelBtn = document.querySelector('.form-actions .btn-ghost');
+  if (cancelBtn) {
+    cancelBtn.addEventListener('click', function() {
+      if (!confirm('Отменить завершение приёма?')) return;
+      document.querySelectorAll('.tactic').forEach(function(t) {
+        t.style.borderColor = '#E5E7EB';
+        t.style.background = '#FFFFFF';
+        var input = t.querySelector('input');
+        if (input) input.checked = false;
+      });
+      var comment = document.querySelector('.comment');
+      if (comment) comment.value = '';
+    });
+  }
+
+  // Заглушки для кнопок-навигации
+  document.querySelectorAll(".btn-outline").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var text = btn.textContent.trim();
+      if (text.indexOf("протокол") !== -1) {
+        alert("Протокол УЗИ доступен в полной версии МИС.");
+      } else if (text.indexOf("История") !== -1) {
+        alert("История маршрута доступна в полной версии МИС.");
+      }
+    });
+  });
+</script>
+
+</body>
+</html> 
+

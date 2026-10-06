@@ -7,6 +7,7 @@ config_loader.py — Загрузка всех YAML-конфигов в един
   config/disputes.yaml       — спорные ситуации
   config/negations.yaml      — отрицания
   config/priorities.yaml     — приоритеты
+  config/unknown_markers.yaml — маркеры «что-то есть, но не распознано»
 
 Возвращает:
   Config — dataclass со всеми данными
@@ -40,9 +41,8 @@ class Finding:
     is_negative: bool
     urgency: str
     source: str
-    organ_code: str = ""  # заполняется при загрузке
-    regex: str | None = None  # только для cardio_regex
-    # Предкомпилированные regex для синонимов (для ускорения)
+    organ_code: str = ""
+    regex: str | None = None
     compiled_synonyms: list[tuple[str, re.Pattern]] = field(default_factory=list)
 
 
@@ -54,7 +54,7 @@ class OrganTriggers:
     organ_name: str
     keywords: list[str]
     findings: list[Finding] = field(default_factory=list)
-    patterns: list[Finding] = field(default_factory=list)  # для RegEx
+    patterns: list[Finding] = field(default_factory=list)
 
 
 @dataclass
@@ -101,6 +101,7 @@ class Config:
     emergency_specialists: list[str] = field(default_factory=list)
     unknown_markers: list[str] = field(default_factory=list)   # ← НОВОЕ
 
+
 # ============================================================================
 #                          LOADER
 # ============================================================================
@@ -115,16 +116,11 @@ class ConfigLoader:
             raise FileNotFoundError(f"Папка конфигов не найдена: {self.config_dir}")
 
     # ------------------------------------------------------------------
-    #  Приватные методы
-    # ------------------------------------------------------------------
-
-    # ------------------------------------------------------------------
     #  Предкомпиляция regex для синонимов
     # ------------------------------------------------------------------
 
     @staticmethod
     def _stem_word(word: str) -> str:
-        """Убирает падежные окончания: 'полипа' -> 'полип'."""
         if len(word) <= 4:
             return word
         vowels = "аеёиоуыэюя"
@@ -135,17 +131,13 @@ class ConfigLoader:
 
     @classmethod
     def _synonym_to_pattern(cls, synonym: str) -> str | None:
-        """Превращает синоним в regex с учётом окончаний."""
         if not synonym or len(synonym) < 3:
             return None
-
         syn = synonym.lower().strip()
         import re as _re
-
         syn = _re.sub(r"\([^)]*\)", "", syn).strip()
         if not syn:
             return None
-
         words = syn.split()
         parts = []
         for w in words:
@@ -154,15 +146,12 @@ class ConfigLoader:
             else:
                 stem = cls._stem_word(w)
                 parts.append(rf"{_re.escape(stem)}[а-яё]{{0,4}}")
-
         body = r"\s+".join(parts)
         return rf"(?<![а-яёa-z]){body}(?![а-яёa-z])"
 
     @classmethod
     def _compile_synonyms(cls, synonyms: list) -> list:
-        """Компилирует regex для всех синонимов."""
         import re as _re
-
         result = []
         for syn in synonyms:
             pattern_str = cls._synonym_to_pattern(syn)
@@ -177,7 +166,6 @@ class ConfigLoader:
 
     @staticmethod
     def _load_yaml(path: Path) -> dict[str, Any]:
-        """Читает YAML, возвращает {} если файл пустой."""
         if not path.exists():
             log.warning(f"Файл не найден: {path}")
             return {}
@@ -186,30 +174,23 @@ class ConfigLoader:
             return data or {}
 
     def _load_triggers(self) -> dict[str, OrganTriggers]:
-        """Загружает все triggers/*.yaml."""
         triggers_dir = self.config_dir / "triggers"
         if not triggers_dir.exists():
             log.warning(f"Папка триггеров не найдена: {triggers_dir}")
             return {}
-
         organs: dict[str, OrganTriggers] = {}
-
         for yaml_path in sorted(triggers_dir.glob("*.yaml")):
             data = self._load_yaml(yaml_path)
             if not data:
                 continue
-
             organ_code = data.get("organ_code") or yaml_path.stem
             organ_name = data.get("organ_name", organ_code)
             keywords = data.get("keywords", [])
-
             organ = OrganTriggers(
                 organ_code=organ_code,
                 organ_name=organ_name,
                 keywords=keywords,
             )
-
-            # findings (синонимы + врач + regex)
             for f in data.get("findings", []):
                 finding = Finding(
                     id=f.get("id", ""),
@@ -221,17 +202,13 @@ class ConfigLoader:
                     organ_code=organ_code,
                     regex=f.get("regex"),
                 )
-
-                # Предкомпилируем regex для синонимов
                 finding.compiled_synonyms = self._compile_synonyms(finding.synonyms)
-
                 organ.findings.append(finding)
-            # patterns (RegEx)
             for p in data.get("patterns", []):
                 organ.patterns.append(
                     Finding(
                         id=p.get("id", ""),
-                        synonyms=[],  # у RegEx нет синонимов
+                        synonyms=[],
                         specialist=p.get("specialist", []),
                         is_negative=p.get("is_negative", False),
                         urgency=p.get("urgency", "planned"),
@@ -240,21 +217,13 @@ class ConfigLoader:
                         regex=p.get("regex"),
                     )
                 )
-
             organs[organ_code] = organ
-            log.debug(
-                f"  {organ_code}: {len(organ.findings)} находок, "
-                f"{len(organ.patterns)} RegEx"
-            )
-
         log.info(f"Загружено триггеров: {len(organs)} органов")
         return organs
 
     def _load_sizes(self) -> dict[str, list[SizeParam]]:
-        """Загружает sizes.yaml."""
         data = self._load_yaml(self.config_dir / "sizes.yaml")
         sizes: dict[str, list[SizeParam]] = {}
-
         for organ_name, params in data.get("organs", {}).items():
             sizes[organ_name] = []
             for p in params:
@@ -262,7 +231,6 @@ class ConfigLoader:
                 if not isinstance(nr, (list, tuple)):
                     nr = [None, None]
                 nr = (nr[0] if len(nr) > 0 else None, nr[1] if len(nr) > 1 else None)
-
                 sizes[organ_name].append(
                     SizeParam(
                         param=p.get("param", ""),
@@ -276,18 +244,13 @@ class ConfigLoader:
                         is_negative=p.get("is_negative", False),
                     )
                 )
-
         total = sum(len(v) for v in sizes.values())
-        log.info(
-            f"Загружено числовых порогов: {len(sizes)} органов, {total} параметров"
-        )
+        log.info(f"Загружено числовых порогов: {len(sizes)} органов, {total} параметров")
         return sizes
 
     def _load_disputes(self) -> list[DisputeEntry]:
-        """Загружает disputes.yaml."""
         data = self._load_yaml(self.config_dir / "disputes.yaml")
         entries: list[DisputeEntry] = []
-
         for category, items in data.get("by_category", {}).items():
             for item in items:
                 entries.append(
@@ -301,12 +264,10 @@ class ConfigLoader:
                         category=category,
                     )
                 )
-
         log.info(f"Загружено спорных ситуаций: {len(entries)}")
         return entries
 
     def _load_negations(self) -> tuple[list[str], list[str]]:
-        """Загружает negations.yaml."""
         data = self._load_yaml(self.config_dir / "negations.yaml")
         negations = data.get("negations", [])
         triggers = data.get("negation_triggers", [])
@@ -314,10 +275,10 @@ class ConfigLoader:
         return negations, triggers
 
     def _load_priorities(self) -> dict[str, Any]:
-        """Загружает priorities.yaml."""
         data = self._load_yaml(self.config_dir / "priorities.yaml")
         log.info(f"Загружены приоритеты: {len(data.get('priorities', {}))} уровней")
         return data
+
     def _load_unknown_markers(self) -> list[str]:
         """Загружает config/unknown_markers.yaml."""
         data = self._load_yaml(self.config_dir / "unknown_markers.yaml")
@@ -330,7 +291,6 @@ class ConfigLoader:
     # ------------------------------------------------------------------
 
     def load(self) -> Config:
-        """Загружает всё и возвращает Config."""
         log.info("=" * 50)
         log.info(f"Загрузка конфигов из {self.config_dir}")
         log.info("=" * 50)
@@ -354,33 +314,3 @@ class ConfigLoader:
 
         log.info("=" * 50)
         return config
-
-
-# ============================================================================
-#                          БЫСТРЫЙ ТЕСТ
-# ============================================================================
-
-if __name__ == "__main__":
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        datefmt="%H:%M:%S",
-    )
-    loader = ConfigLoader(str(Path(__file__).parent.parent / "config"))
-    cfg = loader.load()
-
-    print()
-    print("=== ПРОВЕРКА ===")
-    print(f"Органов: {len(cfg.organs)}")
-    for code, organ in cfg.organs.items():
-        print(
-            f"  {code:10s} {organ.organ_name:40s} "
-            f"findings={len(organ.findings):3d} patterns={len(organ.patterns):3d}"
-        )
-    print(
-        f"Размеров: {len(cfg.sizes)} органов, "
-        f"{sum(len(v) for v in cfg.sizes.values())} параметров"
-    )
-    print(f"Споров: {len(cfg.disputes)}")
-    print(f"Отрицаний: {len(cfg.negations)}")
-    print(f"Приоритетов: {list(cfg.priorities.keys())}")
